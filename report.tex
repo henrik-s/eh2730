@@ -7,6 +7,7 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{fancyhdr}
+\usepackage{pdfpages}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -55,7 +56,7 @@
 \setcounter{page}{1}
 \section{Background}
 \label{sec:background}
-This document is a project plan for the procurement project of ?<Name goes here>?. The ?< Name goes here>? project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
+This document is a project plan for the procurement project of ''The ACME WOMS project''. The ''The ACME WOMS project'' project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
 
 The background for this procurement project is that the company, ACME, has an outstanding economic issue, which has been a problem the company for a long time. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12, increasing the pressure to an already strained budget . The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present. 
 
@@ -205,7 +206,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 				  & Analysis & & \\
 				  & Specification & & \\
 				  & Validation & & \\
-				  & Management* & &\\ \hline
+				  & Manage* & &\\ \hline
 		Request For Proposal & - & 100 &10 Mar\\ \hline
 		Proposals & - & 2&10 Apr\\ \hline
 		Evaluation, &  &  140&1 May\\
@@ -214,7 +215,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 	\hline
 	\end{tabular}
 \end{table}
-* The \emph{management of requirements} phase will continue after the pre-study is past \cite{gott7}.
+* The \emph{Manage requirements} phase will continue after the pre-study is past \cite{gott7}.
 \subsection{Table of Requirement Engineering Phases}
 \begin{table}[H]
 	\centering
@@ -241,7 +242,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 		Validation & Peer Review& 18& 20 Feb Feb &\\ \cline{2-4}
 				 & Iterate & 18& 1 Mar &36\\ \cline{2-4}
 				 \hline
-		Management & Create CCPP\&CCB & 49& 1 Dec &\\ \cline{2-4}
+		Manage & Create CCCP\&CCB & 49& 1 March &\\ \cline{2-4}
 				 & Manage changing requirements & 140& N/A &189\\ \cline{2-4} 
 		\hline
 	
@@ -253,7 +254,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 
 \subsection{Pre-Study}
 \label{sub:pre_study}
-
+In the Pre-Study process there are five requirement engineering phase, described in 5.1.1-5.1.5. The input for this phase is prior work, see section 1.1. The output for this phase is a URD and a SRS.
 \subsubsection{The Requirements Elicitation}
 \label{subsub:the_requirements_elicitation}
 
@@ -455,10 +456,12 @@ The URD document will use the business standard PSS-05, specified by the Europea
 
 \bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }
 
-\bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 }
-
- 
+\bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 } 
 
 \end{thebibliography}
+\clearpage
+\appendix
+\section{Stakeholder Elicitation Plan}
+\includepdf[pages={-}]{appendix/stake_eli_plan.pdf}
 
 \end{document}

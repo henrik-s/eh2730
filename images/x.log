@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011/MacPorts 2011_1) (format=pdflatex 2011.10.6)  22 NOV 2012 17:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(/opt/local/share/texmf-texlive-dist/tex/latex/tools/x.tex
+! Interruption.
+<to be read again> 
+                   \begingroup 
+l.1 
+    %%
+? x
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 495055
+ 278 string characters out of 3181196
+ 45070 words of memory out of 3000000
+ 3285 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 3i,0n,1p,17b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
