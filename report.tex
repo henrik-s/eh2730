@@ -55,15 +55,15 @@
 \setcounter{page}{1}
 \section{Background}
 \label{sec:background}
-This document is a project plan for the procurement project of ?<Name goes here>?. The ?< Name goes here>? project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
+This document is a project plan for the procurement project of ?<Name goes here>?. The ?< Name goes here>? project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive and reactive maintenance as well as the customer support process, in terms of costs and efficiency.
 
-The background for this procurement project is that the company, ACME, has an outstanding economic issue, which has been a problem the company for a long time. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12, increasing the pressure to an already strained budget . The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present. 
+The background for this procurement project is that the company, ACME, has an outstanding economic issues. Theses economic problems have been a problem the company for a long time. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12 hours, increasing the pressure to an already strained budget. The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present. 
 
 \subsection{Prior Work}
 \label{sub:prior_work}
-When the problems in the company was discussed some prior work was conducted to understand the magnitude of the situation. The first thing that has been executed is a survey regarding costs in different companies in this line of work. This survey indicated that ACME's costs were noticeably larger than their business rivals.
+When the problems in the company was discussed some prior work was conducted to understand the magnitude of the situation. The first thing that has been executed is a survey regarding costs in different companies in this line of work. This survey indicated that ACME's costs were noticeably larger than their business rivals. Comparisons with the other companies where made and the realization that a WOMS system could solve parts of the problem. 
 
-When the company realized that what they needed was WOMS, a brief investigation was made. This investigation resulted in the document, Appendix B, see section 1.2. The document explains what a WOMS system is and how it could benefit the company.
+When the company realized that what they needed was WOMS, a brief investigation was made. This investigation resulted in the document, Appendix B, see section 1.2. The document explains what a WOMS system is and how it could benefit the company. This realization was also the starting point for this project.
 
 For current and upcoming systems, the organization has established a number of principles:
 \begin{itemize}
@@ -77,7 +77,7 @@ These principles will be followed in this project.
 \subsection{Reference Documents} 
 \label{sub:reference_documents}
 
-This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME's company structure, IT-systems, business model and business system are collected from Appendix A. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in Appendix A. General information about what a WOMS system is are collected from Appendix B.
+This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME's company structure, IT-systems, business model and business system are collected from Appendix A. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in Appendix A. THe general information, collected in the prior work (see section \ref{sub:prior_work}), about what a WOMS system is are collected from Appendix B.
 
 \subsection{Vision Statement}
 \label{sub:vision_statement}
@@ -88,7 +88,7 @@ Unlike existing work procedures that do not offer the ability to control neither
 \subsection{Constraints}
 \label{sub:constraints}
 
-This project's focus lies on implementing a WOMS system into the existing IT-system that ACME has. Anything that is not directly related to this project or not specified in this document will NOT be included in this project.  I.e. during the prior-work of this procurement-project it has come to the company's attention that the support responsibility of the NIS and SCADA/DMS should be moved to the IS/IT department instead of the Operations department, this will NOT be included in this project. 
+This project's focus lies on implementing a WOMS system into ACME's existing IT-system environment. Anything that is not directly related to this project or not specified in this document will NOT be included in this project.  I.e. during the prior-work of this procurement-project it has come to the company's attention that the support responsibility of the NIS and SCADA/DMS should be moved to the IS/IT department instead of the Operations department, this will NOT be included in this project. 
 
 \subsection{Glossary}
 \label{sub:glossary}
@@ -138,7 +138,7 @@ First we analyze and categorize the stakeholders using Gottesdiener method "Stak
 	\label{figure:stakeholder_categorization}                      	
 \end{figure}
 
-After all of the categorization of the stakeholders, a profilization of the stakeholder was conducted, see figure \ref{figure:stakeholder_profiles}. This was made to see what kind of involvement level, what interest, needs, concerns, constrains and success criteria each of the stakeholder categories have.
+After all of the categorization of the stakeholders, a profilization of the stakeholder was conducted, see figure \ref{figure:stakeholder_profiles}. This was made to see what kind of involvement level, interest, needs, concerns, constrains and success criteria each of the stakeholder categories have.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/stakeholder_profiles.png}
@@ -392,7 +392,9 @@ All the files shall have a version table in the beginning of the document and th
 
  
 \subsection{Document Standards}
-\label{sub:document_standards}
+\label{sub:document_standards} 
+As a part of the policy to use open standards when possible, the company has specified a couple of document standards. Relevant document standards that will be used, in this project, are the standards for the URD and SRS documents.
+
 The URD document will use the business standard PSS-05, specified by the European Space Agency\cite{PSS}. The SRS will be specified using IEEE STD 830-1998 \cite{IEEE}. Using these standard is for completeness and consistency reasons.The PSS-05 format will also add processes in how to write requirements and with this we can be certain that the requirements are specified correctly. Furthermore, using a well known standard will increase the readability for any reader already familiar with the bot the PSS-05 standard as well as IEEE STD 830-1998.
 
 \addcontentsline{toc}{section}{References}
