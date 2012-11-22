@@ -77,7 +77,7 @@ These principles will be followed in this project.
 \subsection{Reference Documents} 
 \label{sub:reference_documents}
 
-This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME's company structure, IT-systems, business model and business system are collected from Appendix A. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in Appendix A. General information about what a WOMS system is are collected from Appendix B.
+This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME's company structure, IT-systems, business model and business system are collected from \textbf{Appendix A}\cite{A}. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in \textbf{Appendix A}\cite{A}. General information about what a WOMS system is are collected from \textbf{Appendix B}\cite{B}.
 
 \subsection{Vision Statement}
 \label{sub:vision_statement}
@@ -114,7 +114,9 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 		CCPP	 & Change Control Policies and Procedures & & \\ \hline
 		COO	& Chief Operations Officer & & \\ \hline
 		PDA	& Personal Digital Assistant & & \\ \hline
-		SVN & Software Versioning And Revision Control System & Apache Subversion & \\  
+		SVN & Software Versioning And Revision Control System & Apache Subversion & \\ 
+		URD & User requirements document & &\\
+		SRS & Software Requirements Specification & & \\  
 
 	\hline
 	
@@ -126,13 +128,13 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 \label{sec:goals}
 The goal and purpose with procuring a WOMS is to have a system that can dispatch, prioritize and monitor work orders. It should also provide analysis functionality such as statistics on the  HAHAHAHAHAAHHAHA
 
-The main costs of ACME's business are maintenance, repair and construction and the survey (section 1.1) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME company. Within the same scope, another goal is to tackle the ''12 hour outage penalty'' issue by cutting the costs for this post in half. 
+The main costs of ACME's business are maintenance, repair and construction and the survey (section 1.1) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME company. Within the same scope, another goal is to tackle the "12 hour outage penalty" issue by cutting the costs for this post in half. 
 
 Another major cost can be found in the customer care division. A WOMS can support this process, providing function and service to improvement and optimization. Therefore, two goals will be lowering: the number of incoming ''customer complaining cases'', and the average time for each case.
 \subsection{Business Goals}
 \begin{itemize}
 \item Reduce the expenses for the maintenance/repair/construction post to $<100\%$ of industry average, till 1 May 2016
-\item Lower the costs for ''12 hour outage penalty'' cases by 50\% till 1 May 2015
+\item Lower the costs for "12 hour outage penalty" cases by 50\% till 1 May 2015
 \item A 30\% decrease of costs for the customer care team division
 \item Replace 20\% of the manual process with automated within the customer care team
 \end{itemize}
@@ -185,13 +187,13 @@ We would have liked to have the field personnel in the project team as well but 
 
 \section{Project Model} 
 \label{sec:project_model}
-The purpose of this project is to find a WOMS system that will fulfil the goals specified in section 2. Since a WOMS system is a general specified system type that can be delivered from a multiple of different distributors the cheapest and simplest way to get one of these system is to buy a COTS system. One of the biggest challenges in selecting a COTS system is selecting a system that best fits the needs of the customer. To be able to do this type of selection we need to specify and analyze the requirements and needs the company have on this system. To successfully do this, this procurement project will embrace requirement engineering and the whole project have been divided into 4 phases, illustrated in figure \ref{figure:procure}. See section 5 for more information about the each phases in the model.
+The purpose of this project is to find a WOMS system that will fulfill the goals specified in section 2. Since a WOMS system is a general specified system type that can be delivered from a multiple of different distributors the cheapest and simplest way to get one of these system is to buy a COTS system. One of the biggest challenges in selecting a COTS system is selecting a system that best fits the needs of the customer. To be able to do this type of selection we need to specify and analyze the requirements and needs the company have on this system. To successfully do this, this procurement project will embrace requirement engineering and the whole project have been divided into 4 phases, illustrated in figure \ref{figure:procure}. See section 5 for more information about the each phases in the model.
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/procurement.png}
-	\caption{Different phases in the procurement project, \cite{appendix_a}}
+	\caption{Different phases in the procurement project, \cite{A}}
 	\label{figure:procure}
 \end{figure}
-The table in section 4.1 describes each of the process in the procurement project model, figure \ref{figure:procure}. The \emph{Pre-Study} phase contain the five requirement engineering phases found in section 4.2. The estimated time for each process, phase, and activity is calculated according to the conditions: the time available is 1000 hour and the contract must be signed till 1 May 2013 \cite{appendix_a}. The time is determined by which stakeholders are involved in each activity, see section 3.2. Each activity is estimated with planning, execution, documentation, and re-iteration in mind.
+The table in section 4.1 describes each of the process in the procurement project model, figure \ref{figure:procure}. The \emph{Pre-Study} phase contain the five requirement engineering phases found in section 4.2. The estimated time for each process, phase, and activity is calculated according to the conditions: the time available is 1000 hour and the contract must be signed till 1 May 2013 \cite{I}. The time is determined by which stakeholders are involved in each activity, see section 3.2. Each activity is estimated with planning, execution, documentation, and re-iteration in mind.
 \subsection{Table of Processes}
 \begin{table}[!ht]
 	\centering
@@ -334,7 +336,7 @@ The third process is to specify all the requirements according to a uniform stan
 
 Gottesdiener's model starts with \textbf{Document the user requirements}, it aims to rewrite the requirements with the user as the audience and collect all the of these requirements in document. The second step in Gottesdiener's model is \textbf{Verify the user needs}; this part focuses on verifying that the requirements previously specified are complete and understandable from the different users point of view. Gottesdiener explains that specifying the user requirements in this way gives a more solid definition of the requirements, both in the the extra detail that this activity results in as well as the fact that this activity unifies all the requirements from the different stakeholder groups. \cite{gott5}. The final version of this document should give the user a good view of what they can expect of new system and how this new system will change the way they work\cite{gott5}. The step \textbf{Document the software requirements} aims on specifying the requirements from the software developers point of view. Furthermore will this document focus on functional requirements, quality attributes constraints and external interfaces to other systems\cite{gott5}. This document is also crucial for the requirements since it will work as a contract between the company and the external system suppliers delivering the WOMS \cite{gott5}. This document gives a much more in detail specification on what will be delivered than what would be possible with only a standard ("non requiremental") contract. 
 
-When applying this model to this project we will assign the project team the responsibility to create the URD and the SRS. The project team will start creating this document by using the models created in section \ref{subsub:the_requirements_analysis}.  Given that the project team consists of 3 people from 3 different direct user roles, specified in \ref{section 3.}, and the fact that the created models from section \ref{subsub:the_requirements_analysis} come from sound user requirements elicitations. This gives us confidence enough to not plan any extra meetings with the stakeholders in this activity and instead let the project team create this document on their own. This decision will result in time-savings without any major losses. When using Gottesdiener's model we will try to merge the first and the second step together, creating one unit that both document and verify the user requirements. The reason for doing this change is that we view this as such an iterative process, going back and forth between documenting and verifying, that they cannot be separated in an efficient manner.  
+When applying this model to this project we will assign the project team the responsibility to create the URD and the SRS. The project team will start creating this document by using the models created in section \ref{subsub:the_requirements_analysis}.  Given that the project team consists of 3 people from 3 different direct user categories, specified in the figure \ref{figure:stakeholder_categorization}, and the fact that the created models from section \ref{subsub:the_requirements_analysis} come from sound user requirements elicitations. This gives us confidence enough to not plan any extra meetings with the stakeholders in this activity and instead let the project team create this document on their own. This decision will result in time-savings without any major losses. When using Gottesdiener's model we will try to merge the first and the second step together, creating one unit that both document and verify the user requirements. The reason for doing this change is that we view this as such an iterative process, going back and forth between documenting and verifying, that they cannot be separated in an efficient manner.  
 
 \subsubsection{The Requirements Validation}
 \label{subsub:the_requirements_validation}
@@ -355,7 +357,7 @@ The first method that will be used in this phase will be the Peer review method 
 
 \subsubsection{Manage The Requirements}
 \label{subsub:manage_the_requirements}
-The final process that needs to be completed before the request for proposal is the management of the requirements phase. Requirements engineering is an iterative process and the requirements for the system will constantly be affected by external factors, such as a new system environment or changing time or budget constraints. There is also a great risk for mistakes and other oversights throughout the whole requirement engineering phase. When the implementation project has started the concretisation of the problem will result in finding these faults. Having a detailed described way of handling theses changes and faults are a crucial part of requirements engineering\cite{gott7}. Without it, there is a great risk of the project being delayed or even cancelled \cite{gott7}. By carrying out a good managements of the requirements these risks can be minimized and the survival of the project can be secured. 
+The final process that needs to be completed before the request for proposal is the management of the requirements phase. Requirements engineering is an iterative process and the requirements for the system will constantly be affected by external factors, such as a new system environment or changing time or budget constraints. There is also a great risk for mistakes and other oversights throughout the whole requirement engineering phase. When the implementation project has started the concretization of the problem will result in finding these faults. Having a detailed described way of handling theses changes and faults are a crucial part of requirements engineering\cite{gott7}. Without it, there is a great risk of the project being delayed or even cancelled \cite{gott7}. By carrying out a good managements of the requirements these risks can be minimized and the survival of the project can be secured. 
 
 This phase will be a constant work throughout the whole project and because of this there is no direct output that can be specified for this phase. The only actual output is new or changed requirements that more accurately describe the project and, of course, a successful project. The input to this phase will be any produced document about the project. Since the phase is about handling changes, anything can be relevant.
 
@@ -441,9 +443,15 @@ The URD document will use the business standard PSS-05, specified by the Europea
 
 \bibitem{SPM3536} \emph{Gido, Jack. Clements, James P. \textsl{"Successful Project Management", edition 4, page. 35-36}. Cengage Learning, 2008}    
 
-\bibitem{}
+\bibitem{A} \emph{The ACME Power Company: Appendix A}
+
+\bibitem{B} \emph{Work Order Management Systems Basics: Appendix B}
+
+\bibitem{I} \emph{Project plan for procurement project: Assignment I}
 
 \bibitem{coleyconsulting} \emph{\textsl{"MoSCoW Prioritisation"} Gathered 2012-11-20} <\url{http://www.coleyconsulting.co.uk/moscow.htm}>
+
+\bibitem{projectsmart} \emph{Singh, Manjeet. \textsl{"Rescuing Projects in Crisis: Project Turnaround Pointers"} Gathered 2012-11-20} <\url{http://www.projectsmart.co.uk/rescuing-projects-in-crisis.html}> 
 
 \bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }
 
