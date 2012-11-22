@@ -43,14 +43,14 @@ The background for this procurement project is that the company, ACME, has an ou
 
 \subsection{Prior Work}
 \label{sub:prior_work}
-When the problems in the company was discussed some prior work was conducted to understand the magnitude of the situation. The first thing that has been executed is a survey regarding costs in different companies in this line of work. This survey indicated that ACME?s costs were noticeably larger than their business rivals.
+When the problems in the company was discussed some prior work was conducted to understand the magnitude of the situation. The first thing that has been executed is a survey regarding costs in different companies in this line of work. This survey indicated that ACME's costs were noticeably larger than their business rivals.
 
 When the company realized that what they needed was WOMS, a brief investigation was made. This investigation resulted in the document, Appendix B, see section 1.2. The document explains what a WOMS system is and how it could benefit the company.
 
 For current and upcoming systems, the organization has established a number of principles:
 \begin{itemize}
 \item Apply open standards when applicable
-\item All data flows from ACME hosts to and from other networks (e.g. Internet) should pass through ACME?s network boundary firewall proxy
+\item All data flows from ACME hosts to and from other networks (e.g. Internet) should pass through ACME's network boundary firewall proxy
 \item For the ERP system, no modifications are allowed
 \end{itemize}
 
@@ -59,18 +59,18 @@ These principles will be followed in this project.
 \subsection{Reference Documents} 
 \label{sub:reference_documents}
 
-This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME?s company structure, IT-systems, business model and business system are collected from Appendix A. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in Appendix A. General information about what a WOMS system is are collected from Appendix B.
+This document is the result of the need for an integration plan for a WOMS system. This need is to be found in the Assignment I document. Information about the current ACME's company structure, IT-systems, business model and business system are collected from Appendix A. A brief introduction to how a WOMS system could be integrated into the current ACME system and what effect this might give is also stated in Appendix A. General information about what a WOMS system is are collected from Appendix B.
 
 \subsection{Vision Statement}
 \label{sub:vision_statement}
 For ACME who deliver electrical power to factories and households, where the main costs are maintenance and customer support, the WOMS, a COTS software integrated with other systems in the organization, will enhance how proactive and reactive maintenance is functioning and how information can be provided to customers. 
 
-Unlike existing work procedures that do not offer the ability to control neither how to dispatch work orders nor to follow up and reduce costs related to maintenance work, the WOMS product will fulfill not only how to control and optimize the maintenance function, but also enable ACME?s customer support to provide better and more up-to-date information to customers. 
+Unlike existing work procedures that do not offer the ability to control neither how to dispatch work orders nor to follow up and reduce costs related to maintenance work, the WOMS product will fulfill not only how to control and optimize the maintenance function, but also enable ACME's customer support to provide better and more up-to-date information to customers. 
 
 \subsection{Constraints}
 \label{sub:constraints}
 
-This project?s focus lies on implementing a WOMS system into the existing IT-system that ACME has. Anything that is not directly related to this project or not specified in this document will NOT be included in this project.  I.e. during the prior-work of this procurement-project it has come to the company?s attention that the support responsibility of the NIS and SCADA/DMS should be moved to the IS/IT department instead of the Operations department, this will NOT be included in this project. 
+This project's focus lies on implementing a WOMS system into the existing IT-system that ACME has. Anything that is not directly related to this project or not specified in this document will NOT be included in this project.  I.e. during the prior-work of this procurement-project it has come to the company's attention that the support responsibility of the NIS and SCADA/DMS should be moved to the IS/IT department instead of the Operations department, this will NOT be included in this project. 
 
 \subsection{Glossary}
 \label{sub:glossary}
@@ -290,11 +290,33 @@ As specified in section \ref{subsub:manage_the_requirements}, the COO is a part 
  
 \section{Risk Analysis}
 \label{sec:risk_analysis}
+For probably every project, having a risk management strategy is of great importance because the occurrence of changes and unpredictable events lies in project management's nature \cite{källa?}. The primary focus of this project plan is on requirements. In this section, a risk analysis created according to Gottesdiener Requirement Risk Mitigation Strategy \cite{gott37}, is presented. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{2.5cm}| p{2.5cm} |p{2.5cm}| p{2.5cm} | p{2.5cm} |}
+	\hline
+		\textit{Risk Factor} & \textit{Probability of Risk} & \textit{Impact of Risk} & \textit{Risk Mitigation Strategy} & \textit{Team Member Responsible} \\
+		
+	\hline 
+		Team Member Responsible & Low & Medium & - Revise activities involving a "difficult"-stakeholder, try find other suitable methods & Henrik Sohlberg \\ \hline 
+		Developers adding unnecessary functionality & Mid & Low & - Put emphasis on creating a flawless URD and SRS combined with a clearly stated contract with vendor & Christian Wemstad \\ \hline 
+		Requirements are constantly changing during the whole procurement project & Mid & Mid-High (the later the higher) & - Perform additional "define project scope"- methods
+such as Event-Response table & Christian Wemstad \\ \hline 
+		Unable to reach consensus between stakeholders during requirement prioritization phase & Low & Mid & - Make us of other  prioritization methods, e.g. "100\$ method", Requirements Prioritization based on Value, Cost, and Risk etc. & Henrik Sohlberg \\ \hline 
+		Field personnel seriously lacks experience, e.g. handling a PDA, that a WOMS system requires & Low & High & 
+- Educate and introduce them to the demanded technology, sufficiently, before they are involved in any requirement engineering processes & Henrik Sohlberg \\ \hline 
+
+
+
+		
+	\end{tabular}
+\end{table}
 
 \section{Document Rules} 
 \label{sec:document_rules}
 
-
+The URD document will use the business standard PSS-05, specified by the European Space Agency\cite{PSS}. The SRS will be specified using IEEE STD 830-1998 \cite{IEEE}. Using these standard is for completeness and consistency reasons.The PSS-05 format will also add processes in how to write requirements and with this we can be certain that the requirements are specified correctly. Furthermore, using a well known standard will increase the readability for any reader already familiar with the bot the PSS-05 standard as well as IEEE STD 830-1998.
 
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{99}     
@@ -341,7 +363,11 @@ As specified in section \ref{subsub:manage_the_requirements}, the COO is a part 
 
 \bibitem{SPM3536} \emph{Gido, Jack. Clements, James P. \textsl{"Successful Project Management", edition 4, page. 35-36}. Cengage Learning, 2008}
 
-\bibitem{coleyconsulting} \emph{\textsl{MoSCoW Prioritisation} Gathered 2012-11-20} <\url{http://www.coleyconsulting.co.uk/moscow.htm}>
+\bibitem{coleyconsulting} \emph{\textsl{"MoSCoW Prioritisation"} Gathered 2012-11-20} <\url{http://www.coleyconsulting.co.uk/moscow.htm}>
+
+\bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }
+
+\bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 }
 
  
 
