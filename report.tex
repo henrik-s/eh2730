@@ -7,6 +7,7 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{fancyhdr}
+\usepackage{pdfpages}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -55,7 +56,7 @@
 \setcounter{page}{1}
 \section{Background}
 \label{sec:background}
-This document is a project plan for the procurement project of ?<Name goes here>?. The ?< Name goes here>? project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
+This document is a project plan for the procurement project of ''The ACME WOMS project''. The ''The ACME WOMS project'' project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
 
 The background for this procurement project is that the company, ACME, has an outstanding economic issue, which has been a problem the company for a long time. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12, increasing the pressure to an already strained budget . The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present. 
 
@@ -113,7 +114,8 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 		CCB	& Change Control Board & & \\ \hline
 		CCPP	 & Change Control Policies and Procedures & & \\ \hline
 		COO	& Chief Operations Officer & & \\ \hline
-		PDA	& Personal Digital Assistant & & \\ 
+		PDA	& Personal Digital Assistant & & \\ \hline
+		SVN & Software Versioning And Revision Control System & Apache Subversion & \\  
 
 	\hline
 	
@@ -146,11 +148,11 @@ Another major cost can be found in the customer care division. A WOMS can suppor
 
 \subsection{Stakeholders}
 \label{sub:stakeholders}
-First we analyze and categorize the stakeholders using Gottesdiener method "Stakeholder categories". As described in the figure all the stakeholders will be divided into three different sub categories, customers, users and others. When this is done all of the sub categories are further splitted into two new underlying categories. When this is done, all the stakeholders have been assigned a category type. 
+First we analyze and categorize the stakeholders using Gottesdiener method "Stakeholder categories". As described in the figure all the stakeholders will be divided into three different sub categories, customers, users and others. When this is done all of the sub categories are further divided into two new underlying categories. When this is done, all the stakeholders have been assigned a category type. 
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/stakeholder_categorization.png}
-	\caption{HAHAHAHHAHAHAHAHAHAHAHA}
+	\caption{Gottesdiener's model for categorizing stakeholders\cite{gott3}}
 	\label{figure:stakeholder_categorization}                      	
 \end{figure}
 
@@ -158,7 +160,7 @@ After all of the categorization of the stakeholders, a profilization of the stak
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/stakeholder_profiles.png}
-	\caption{HAHAHAHHAHAHAHAHAHAHAHA}
+	\caption{Gottesdiener's model for profiling stakeholders \cite{gott3}}
 	\label{figure:stakeholder_profiles}
 \end{figure}
 
@@ -232,11 +234,11 @@ The table in section 4.1 describes each of the process in the procurement projec
 				 & One iteration  & 60& 20 Jan &\\ \cline{2-4}
 				 & Prioritization & 24& 24 Jan & 198\\ \cline{2-4} 
 				 \hline
-		Specification & Create URD & 90& 1 Feb &\\ \cline{2-4}
-				 & Create SRS & 90& 10 Feb &180\\ \cline{2-4}
+		Specification & Create URD & 90& 2 Feb &\\ \cline{2-4}
+				 & Create SRS & 90& 13 Feb &180\\ \cline{2-4}
 				 \hline
-		Validation & Peer Review& 18& 15 Feb &\\ \cline{2-4}
-				 & Iterate & 18& 20 Feb &36\\ \cline{2-4}
+		Validation & Peer Review& 18& 20 Feb Feb &\\ \cline{2-4}
+				 & Iterate & 18& 1 Mar &36\\ \cline{2-4}
 				 \hline
 		Manage & Create CCCP\&CCB & 49& 1 March &\\ \cline{2-4}
 				 & Manage changing requirements & 140& N/A &189\\ \cline{2-4} 
@@ -250,7 +252,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 
 \subsection{Pre-Study}
 \label{sub:pre_study}
-
+In the Pre-Study process there are five requirement engineering phase, described in 5.1.1-5.1.5. The input for this phase is prior work, see section 1.1. The output for this phase is a URD and a SRS.
 \subsubsection{The Requirements Elicitation}
 \label{subsub:the_requirements_elicitation}
 
@@ -258,18 +260,18 @@ The first step in the pre-study process is to elicitate all the requirements for
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/elicitation_model.png}
-	\caption{HAHAHAHAHAHAHAHAHAHAAHAHAHAHAH}
+	\caption{Gottesdiener's model for eliciting requirements\cite{gott3}}
 	\label{figure:elicitation}
 \end{figure}
 
 
-A precondition for a successful requirements elicitation is to have planned for what techniques to be used (\textbf{Select and plan the requirements elicitation techniques}), and conduct preparations for each technique, specifying goals and expectations (\textbf{Set goals and expectations and prepare}). There are a number of different types of activities that can be used in the elicitation phase, \emph{Interviews, Facilitated Workshops, Exploratory Prototypes, Focus group, Observation, User Task Analysis, Existing Documentation Study} are the ones Gottesdiener describes in her book \cite{gott64}. Since our project is a COTS project, and the fact that we already have a clear specification about the functionality of the WOMS, the focus on the activities will be on figuring out the specific requirements for ACME and how the WOMS system should be used in their environment.
+A precondition for a successful requirements elicitation is to have planned for what techniques to be used (\textbf{Select and plan the requirements elicitation techniques}), and conduct preparations for each technique, specifying goals and expectations (\textbf{Set goals and expectations and prepare}). There are a number of different types of activities that can be used in the elicitation phase, \emph{Interviews, Facilitated Workshops, Exploratory Prototypes, Focus group, Observation, User Task Analysis, Existing Documentation Study} are the ones Gottesdiener describes in her book \cite{gott3}. Since our project is a COTS project, and the fact that we already have a clear specification about the functionality of the WOMS, the focus on the activities will be on figuring out the specific requirements for ACME and how the WOMS system should be used in their environment.
 
 As for our first elicitation technique, we have chosen to use a \emph{facilitated workshop}. To decide who we shall invite to participate in this workshop we use the \emph{stakeholder categorization model}, specified in section 3. We have decided that the participants in this shall be 10 people, they will come from all of the different direct user groups, from the stakeholder categorization. In this workshop we will start by explaining what a WOMS is and the we let the participants try to define what they would like to see in such a product. The purpose of this activity is to gather information about what the direct users see as important in a WOMS system, we will also be able to get a brief understanding about how the users would like the system to look and interact with them.
 
-The second technique to be used is exploratory prototype. We will design and build a prototype based on the outcome from the facilitated workshop. One of the purposes and the reason this technique is chosen is, as Gottesdiener proclaims \cite{gott77} - it is one of the best ways to validate requirements. This applies to figure 1 Verify and correct your findings. 
+The second technique to be used is exploratory prototype. We will design and build a prototype based on the outcome from the facilitated workshop. One of the purposes and the reason this technique is chosen is, as Gottesdiener proclaims \cite{gott3} - it is one of the best ways to validate requirements. This applies to figure 1 Verify and correct your findings. 
 
-In addition to the two activities, we plan to interview the leftover stakeholders (the Communication Team and the IS/IT department) to get information of their needs. The output from the two earlier activities will act as a basis for interviews, as we believe it is likely that the, so far, elicited requirements will affect the technical specification - therefore the technical requirement (e.g. integration with other systems). This is the goal and the expectation for this method, to gain information like technical requirements and for example ''... uncover conflicting software requirements.'' \cite{gott65}
+In addition to the two activities, we plan to interview the leftover stakeholders (the Communication Team and the IS/IT department) to get information of their needs. The output from the two earlier activities will act as a basis for interviews, as we believe it is likely that the, so far, elicited requirements will affect the technical specification - therefore the technical requirement (e.g. integration with other systems). This is the goal and the expectation for this method, to gain information like technical requirements and for example "... uncover conflicting software requirements." \cite{gott3}
 
 \subsubsection{The Requirements Analysis}
 \label{subsub:the_requirements_analysis}
@@ -278,17 +280,17 @@ The second process in the pre-study and planning stage is analysis of the requir
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=0.3\textwidth]{images/analysis_model.png}
-	\caption{HAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAH}
+	\caption{Gottesdiener's model for analyzing elicited requirements\cite{gott4}}
 	\label{figure:analysis}
 \end{figure}
 
-The analysis process can be divided into a 4-step model where the progress may move forward one step, as well as backward, visualized in fig \ref{figure:analysis}\cite{gott111}. The first step, \textbf{Model the business}, aims to map the functions and processes within the organization. This information will help in understanding how requirements will apply and affect the current business structure. The information will help uncovering new requirements and needs for changing processes, as well.
+The analysis process can be divided into a 4-step model where the progress may move forward one step, as well as backward\cite{gott4}, visualized in figure \ref{figure:analysis}. The first step, \textbf{Model the business}, aims to map the functions and processes within the organization. This information will help in understanding how requirements will apply and affect the current business structure. The information will help uncovering new requirements and needs for changing processes, as well.
  
-Next step, \textbf{Define the project scope}, is crucial. According to Singh \cite{projectsmart}, a unclear scope and poor planning is two common reasons to a project failing. Successfully defining the project scope will not only prevent the project and requirements to get out of hand, but it will also create better conditions to plan the project \cite{gott127}. 
+Next step, \textbf{Define the project scope}, is crucial. According to Singh \cite{projectsmart}, a unclear scope and poor planning is two common reasons to a project failing. Successfully defining the project scope will not only prevent the project and requirements to get out of hand, but it will also create better conditions to plan the project \cite{gott4}. 
 
 With the business model and a definition of the project scope, the next step is to analyze the requirements in more detail. For this, Gottesdiener suggest to \textbf{Create detailed user requirements models}, multiple of them and iterate between them to reveal new facts and defects among the requirements.
         
-When the models have been created, we will have bunch of user requirements. Next step in the Gottesdiener requirement analyze model is \textbf{Prioritize requirements}. This is necessary since there is a high probability that some requirements are unnecessary, interfering with each other, and are infeasible to include in the product\cite{Lecture 5}.  
+When the models have been created, we will have bunch of user requirements. Next step in the Gottesdiener requirement analyze model is \textbf{Prioritize requirements}. This is necessary since there is a high probability that some requirements are unnecessary, interfering with each other, and are infeasible to include in the product\cite{Lec5}.  
 
 Adapting this model, the activities in this process will be:
 \begin{enumerate}
@@ -304,14 +306,14 @@ Adapting this model, the activities in this process will be:
 
 
 
-A Process Map technique fulfill the purpose to model the business. The activity will yield manageable information over the business processes for the WOMS (based upon the elicitated requirements from section \ref{subsub:the_requirements_elicitation}). The output may also suggest improvements for other business processes \cite{gott122}, e.g. perhaps processes in the Call Center departement how they handle customers turn out to be improvable. Furthermore, Gottesdiener proclaims that one can use the output from a Process Map model as input to a Use Case and also to a Data Model activity\cite{gott126}.
-      The Context Diagram (CD) together with the Business Policies (BP) activity are selected to define this project's scope. The BP activity is also motivated as ACME has stated and is following a number of policies/principles, see 1.2. In addition, output from the CD model can also be useful input to the Use Case activity and to the Data Model activity\cite{gott131} while the BP model support the Business Rules activity \cite{gott143}.
+A Process Map technique fulfill the purpose to model the business. The activity will yield manageable information over the business processes for the WOMS (based upon the elicitated requirements from section \ref{subsub:the_requirements_elicitation}). The output may also suggest improvements for other business processes \cite{gott4}, e.g. perhaps processes in the Call Center departement how they handle customers turn out to be improvable. Furthermore, Gottesdiener proclaims that one can use the output from a Process Map model as input to a Use Case and also to a Data Model activity\cite{gott4}.
+      The Context Diagram (CD) together with the Business Policies (BP) activity are selected to define this project's scope. The BP activity is also motivated as ACME has stated and is following a number of policies/principles, see 1.2. In addition, output from the CD model can also be useful input to the Use Case activity and to the Data Model activity\cite{gott4} while the BP model support the Business Rules activity \cite{gott4}.
      The last three activities - Business Rules (BR), Use Cases (UC), and Data Model (DM) - are chosen because not only do they make use of output from earlier activities, they co-operate with each other, providing output as input, in a circular way. Activity relationships are illustrated in figure \ref{figure:business}
      
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/model_the_business.png}
-	\caption{HAHAHAHAHAHAHAHAHAHAHAHA}
+	\caption{Gottesdiener's model to model the business\cite{gott4}}
 	\label{figure:business}
 \end{figure}
      
@@ -322,43 +324,43 @@ The last planned activity in this phase is Prioritization using the MoSCoW metho
 \subsubsection{The Requirements Specification}
 \label{subsub:the_requirements_specification}
 
-The third process is to specify all the requirements according to a uniform standard. The goal with this phase is to verify that the requirements that have been listed and analyzed are connected to the goals with the project and actually fulfill all of the specified goals\ref{sec:goals}. According to Gottesdiener\cite{gott232} this can be done by using a 4-steps model visualized in figure \ref{figure:specifications}. Gottesdiener specifies that the requirement. The input for this process will be the analyzed models from \ref{subsub:the_requirements_analysis} and the stakeholder profiles. The output will be a User Requirements Document (URD) and a Software Requirements Specification (SRS).
+The third process is to specify all the requirements according to a uniform standard. The goal with this phase is to verify that the requirements that have been listed and analyzed are connected to the goals with the project and actually fulfill all of the specified goals\ref{sec:goals}. According to Gottesdiener\cite{gott5} this can be done by using a 4-steps model visualized in figure \ref{figure:specifications}. Gottesdiener specifies that the requirement. The input for this process will be the analyzed models from \ref{subsub:the_requirements_analysis} and the stakeholder profiles. The output will be a User Requirements Document (URD) and a Software Requirements Specification (SRS).
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/specifications_model.png}
-	\caption{HAHAHAHAHAHHAHAHA}
+	\caption{Gottesdiener's model for specificaton of requirements\cite{gott5}}
 	\label{figure:specifications}
 \end{figure}
 
-Gottesdiener's model starts with \textbf{Document the user requirements}, it aims to rewrite the requirements with the user as the audience and collect all the of these requirements in document. The second step in Gottesdiener's model is \textbf{Verify the user needs}; this part focuses on verifying that the requirements previously specified are complete and understandable from the different users point of view. Gottesdiener explains that specifying the user requirements in this way gives a more solid definition of the requirements, both in the the extra detail that this activity results in as well as the fact that this activity unifies all the requirements from the different stakeholder groups. \cite{gott234}. The final version of this document should give the user a good view of what they can expect of new system and how this new system will change the way they work\cite{gott235}. The step \textbf{Document the software requirements} aims on specifying the requirements from the software developers point of view. Furthermore will this document focus on functional requirements, quality attributes constraints and external interfaces to other systems\cite{gott238}. This document is also crucial for the requirements since it will work as a contract between the company and the external system suppliers delivering the WOMS \cite{gott238}. This document gives a much more in detail specification on what will be delivered than what would be possible with only a standard ("non requiremental") contract. 
+Gottesdiener's model starts with \textbf{Document the user requirements}, it aims to rewrite the requirements with the user as the audience and collect all the of these requirements in document. The second step in Gottesdiener's model is \textbf{Verify the user needs}; this part focuses on verifying that the requirements previously specified are complete and understandable from the different users point of view. Gottesdiener explains that specifying the user requirements in this way gives a more solid definition of the requirements, both in the the extra detail that this activity results in as well as the fact that this activity unifies all the requirements from the different stakeholder groups. \cite{gott5}. The final version of this document should give the user a good view of what they can expect of new system and how this new system will change the way they work\cite{gott5}. The step \textbf{Document the software requirements} aims on specifying the requirements from the software developers point of view. Furthermore will this document focus on functional requirements, quality attributes constraints and external interfaces to other systems\cite{gott5}. This document is also crucial for the requirements since it will work as a contract between the company and the external system suppliers delivering the WOMS \cite{gott5}. This document gives a much more in detail specification on what will be delivered than what would be possible with only a standard ("non requiremental") contract. 
 
 When applying this model to this project we will assign the project team the responsibility to create the URD and the SRS. The project team will start creating this document by using the models created in section \ref{subsub:the_requirements_analysis}.  Given that the project team consists of 3 people from 3 different direct user roles, specified in \ref{section 3.}, and the fact that the created models from section \ref{subsub:the_requirements_analysis} come from sound user requirements elicitations. This gives us confidence enough to not plan any extra meetings with the stakeholders in this activity and instead let the project team create this document on their own. This decision will result in time-savings without any major losses. When using Gottesdiener's model we will try to merge the first and the second step together, creating one unit that both document and verify the user requirements. The reason for doing this change is that we view this as such an iterative process, going back and forth between documenting and verifying, that they cannot be separated in an efficient manner.  
 
 \subsubsection{The Requirements Validation}
 \label{subsub:the_requirements_validation}
-The fourth process the implementation can start is to validate that the specified requirements. In difference to the different validation steps in the other phases this phase focuses on how the requirements are specified. I.e "Did we get the requirements right?" rather than "Did we get the right requirement?". The purpose of spending time on this phase is therefore to validate that all the requirements are ambiguous and specified correctly. It is also important to find unnecessary, lacking or faulty requirements and to correct these\cite{gott261262}. In is really important to understand that this phase should not be executed as a last step. It  should be an iterative process that progresses alongside with the other steps, constantly validating the current progress in the requirements engineering\cite{gott261262}. Gottesdiener specifies the validation phase into 4-different steps, according to the figure \ref{figure:validation}\cite{gott261262}. 
+The fourth process the implementation can start is to validate that the specified requirements. In difference to the different validation steps in the other phases this phase focuses on how the requirements are specified. I.e "Did we get the requirements right?" rather than "Did we get the right requirement?". The purpose of spending time on this phase is therefore to validate that all the requirements are ambiguous and specified correctly. It is also important to find unnecessary, lacking or faulty requirements and to correct these\cite{gott6}. In is really important to understand that this phase should not be executed as a last step. It  should be an iterative process that progresses alongside with the other steps, constantly validating the current progress in the requirements engineering\cite{gott6}. Gottesdiener specifies the validation phase into 4-different steps, according to the figure \ref{figure:validation}\cite{gott6}. 
 
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/validations_model.png}
-	\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAH}
+	\caption{Gottesdiener's model for validation of requirements\cite{gott6}}
 	\label{figure:validation}
 \end{figure}
 
 
-In the first step, \textbf{Select and integrate the requirements validation techniques}, the goal is to select the best techniques for the current stage in the requirements engineering process that most efficient validates the current progress. The second and third step, \textbf{Ensure adequate user involvement} and \textbf{Validate the requirements}, focuses on selecting the right stakeholders to be in the current validation method and executing the method. The last step in this model is \textbf{Revise the requirements documentation}. The focus here lies on using the result in from the validation to revise and update the documents, removing any found errors. The input to the validation phase, including the peer review, will be all of the current produced documents of the current produces documents. The output will be the same documents in a reviewed state\cite{gott261263}.
+In the first step, \textbf{Select and integrate the requirements validation techniques}, the goal is to select the best techniques for the current stage in the requirements engineering process that most efficient validates the current progress. The second and third step, \textbf{Ensure adequate user involvement} and \textbf{Validate the requirements}, focuses on selecting the right stakeholders to be in the current validation method and executing the method. The last step in this model is \textbf{Revise the requirements documentation}. The focus here lies on using the result in from the validation to revise and update the documents, removing any found errors. The input to the validation phase, including the peer review, will be all of the current produced documents of the current produces documents. The output will be the same documents in a reviewed state\cite{gott6}.
 
-The first method that will be used in this phase will be the Peer review method \cite{gott263269}. The reason for selecting the Peer review method is because this method is specified to be used in the beginning of the requirements engineering process\cite{gott280}. The Peer review is executed using a small group (8-9 persons) of stakeholder. The stakeholders will be both from the users side of the system as well as from the system administrators. By having both these views in the validation of the new system we will be able to do what the users need and that it is possible to integrate the system in the current environment. The peer review meeting will be executed as a standard inspection peer review and will moderated by one person from the project team. After the peer review has been executed, the project team along with the moderator will revise the documents and update them when needed. The group will also specify what next validation activity will be.
+The first method that will be used in this phase will be the Peer review method \cite{gott6}. The reason for selecting the Peer review method is because this method is specified to be used in the beginning of the requirements engineering process\cite{gott6}. The Peer review is executed using a small group (8-9 persons) of stakeholder. The stakeholders will be both from the users side of the system as well as from the system administrators. By having both these views in the validation of the new system we will be able to do what the users need and that it is possible to integrate the system in the current environment. The peer review meeting will be executed as a standard inspection peer review and will moderated by one person from the project team. After the peer review has been executed, the project team along with the moderator will revise the documents and update them when needed. The group will also specify what next validation activity will be.
 
 \subsubsection{Manage The Requirements}
 \label{subsub:manage_the_requirements}
-The final process that needs to be completed before the request for proposal is the management of the requirements phase. Requirements engineering is an iterative process and the requirements for the system will constantly be affected by external factors, such as a new system environment or changing time or budget constraints. There is also a great risk for mistakes and other oversights throughout the whole requirement engineering phase. When the implementation project has started the concretisation of the problem will result in finding these faults. Having a detailed described way of handling theses changes and faults are a crucial part of requirements engineering\cite{gott281}. Without it, there is a great risk of the project being delayed or even cancelled \cite{gott281}. By carrying out a good managements of the requirements these risks can be minimized and the survival of the project can be secured. 
+The final process that needs to be completed before the request for proposal is the management of the requirements phase. Requirements engineering is an iterative process and the requirements for the system will constantly be affected by external factors, such as a new system environment or changing time or budget constraints. There is also a great risk for mistakes and other oversights throughout the whole requirement engineering phase. When the implementation project has started the concretisation of the problem will result in finding these faults. Having a detailed described way of handling theses changes and faults are a crucial part of requirements engineering\cite{gott7}. Without it, there is a great risk of the project being delayed or even cancelled \cite{gott7}. By carrying out a good managements of the requirements these risks can be minimized and the survival of the project can be secured. 
 
 This phase will be a constant work throughout the whole project and because of this there is no direct output that can be specified for this phase. The only actual output is new or changed requirements that more accurately describe the project and, of course, a successful project. The input to this phase will be any produced document about the project. Since the phase is about handling changes, anything can be relevant.
 
-In this phase, there will be one main activity. This activity will be to investigate when changes that will affect the requirements happen and act accordingly. To do this in good manner there are some preconditions that have to be fulfilled\cite{gott282}. The first thing we need to do to fulfill these preconditions is to establish mechanisms for managing change requirements, this activity will result in a document called Change Control Policies and Procedures (CCPP). This document will, inter alia, specify how requirements changes will be recorded as well as how the software project aligns with the changing business needs. With this document the project will have a documented way on how to respond to changing requirements and ways to minimize the disruption to the project plan in whole when changes are needed. When specifying this document we will also create a Change Control Board (CCB). The CCB is a specialized group of stakeholders who are in charge when it comes to doing changes according to the CCPP. This group will consist of the members of the project team, \ref{section 3.x?}, and the COO. When the procurement project is finished and the implementation begins, the consultants in the project team will be replaced with members from the hired vendor. Since the CCB is responsible for the changes in requirements, it is in their interest to create time and budget for doing these changes.
+In this phase, there will be one main activity. This activity will be to investigate when changes that will affect the requirements happen and act accordingly. Before this activity can start there are some preconditions that have to be fulfilled\cite{gott7}. The first thing we need to do to fulfill these preconditions is to establish mechanisms for managing change requirements, this activity will result in a document called Change Control Policies and Procedures (CCPP). This document will, inter alia, specify how requirements changes will be recorded as well as how the software project aligns with the changing business needs. With this document the project will have a documented way on how to respond to changing requirements and ways to minimize the disruption to the project plan in whole when changes are needed. When specifying this document we will also create a Change Control Board (CCB). The CCB is a specialized group of stakeholders who are in charge when it comes to doing changes according to the CCPP. This group will consist of the members of the project team, \ref{sub:project_team}, and the COO. When the procurement project is finished and the implementation begins, the consultants in the project team will be replaced with members from the hired vendor. Since the CCB is responsible for the changes in requirements, it is in their interest to create time and budget for doing these changes.
 
 The second precondition that needs to be fulfilled is understanding requirements lineage and relationships. To successfully do this we will construct a Requirements Trace Matrices (RTM). The RTM will specifies the correlation between software and implementation components, business goals and the requirements. With this type of document the CCB will have a greater control on what effects a change a requirement will have for both different software components and business goal. 
 
@@ -384,7 +386,7 @@ As specified in section \ref{subsub:manage_the_requirements}, the COO is a part 
  
 \section{Risk Analysis}
 \label{sec:risk_analysis}
-For probably every project, having a risk management strategy is of great importance because the occurrence of changes and unpredictable events lies in project management's nature \cite{källa?}. The primary focus of this project plan is on requirements. In this section, a risk analysis created according to Gottesdiener Requirement Risk Mitigation Strategy \cite{gott37}, is presented. 
+For probably every project, having a risk management strategy is of great importance because the occurrence of changes and unpredictable events lies in project management's nature \cite{källa?}. The primary focus of this project plan is on requirements. In this section, a risk analysis created according to Gottesdiener Requirement Risk Mitigation Strategy \cite{gott2}, is presented. 
 
 \begin{table}[H]
 	\centering
@@ -414,6 +416,7 @@ To easy understand what files are included in the project a unified way of writi
 
 All the files shall have a version table in the beginning of the document and the current version of the file shall be specified in the end of the document name.
 
+All files will be stored on ACME's own SVN server, using the standard backup system. Stakeholders outside the company will be given access to relevant parts of the SVN server.
  
 \subsection{Document Standards}
 \label{sub:document_standards}
@@ -422,56 +425,35 @@ The URD document will use the business standard PSS-05, specified by the Europea
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{99}     
 	
-\bibitem{gott77} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 77}. GOAL/QPC, 2005}
+\bibitem{gott2} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 2}. GOAL/QPC, 2005}
 
-\bibitem{gott127} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 127}. GOAL/QPC, 2005}
+\bibitem{gott3} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 3}. GOAL/QPC, 2005}
 
-\bibitem{gott122} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 122}. GOAL/QPC, 2005}
+\bibitem{gott4} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 4}. GOAL/QPC, 2005}
 
-\bibitem{gott126} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 126}. GOAL/QPC, 2005}
+\bibitem{gott5} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 5}. GOAL/QPC, 2005}
 
-\bibitem{gott131} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 131}. GOAL/QPC, 2005}
+\bibitem{gott6} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 6}. GOAL/QPC, 2005}
 
-\bibitem{gott143} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 143}. GOAL/QPC, 2005}
+\bibitem{gott7} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" chapter 7}. GOAL/QPC, 2005}
 
-\bibitem{gott232} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 232}. GOAL/QPC, 2005}
-
-\bibitem{gott234} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 234}. GOAL/QPC, 2005}
-
-\bibitem{gott235} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 235}. GOAL/QPC, 2005}
-
-\bibitem{gott238} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 238}. GOAL/QPC, 2005}
-
-\bibitem{gott261262} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 261-262}. GOAL/QPC, 2005}
-
-\bibitem{gott261263} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 261-263}. GOAL/QPC, 2005}
-
-\bibitem{gott263269} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 263-269}. GOAL/QPC, 2005}
-
-\bibitem{gott64} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 64}. GOAL/QPC, 2005}
-
-\bibitem{gott65} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 65}. GOAL/QPC, 2005}
-
-\bibitem{gott111} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 111}. GOAL/QPC, 2005}
-
-\bibitem{gott280} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 280}. GOAL/QPC, 2005}
-
-\bibitem{gott281} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 281}. GOAL/QPC, 2005}
-
-\bibitem{gott282} \emph{Gottesdiener, Ellen. \textsl{"The Software Requirements Memmory Jogger" page. 282}. GOAL/QPC, 2005}
 
 \bibitem{SPM34} \emph{Gido, Jack. Clements, James P. \textsl{"Successful Project Management", edition 4, page. 34}. Cengage Learning, 2008}
 
-\bibitem{SPM3536} \emph{Gido, Jack. Clements, James P. \textsl{"Successful Project Management", edition 4, page. 35-36}. Cengage Learning, 2008}
+\bibitem{SPM3536} \emph{Gido, Jack. Clements, James P. \textsl{"Successful Project Management", edition 4, page. 35-36}. Cengage Learning, 2008}    
+
+\bibitem{}
 
 \bibitem{coleyconsulting} \emph{\textsl{"MoSCoW Prioritisation"} Gathered 2012-11-20} <\url{http://www.coleyconsulting.co.uk/moscow.htm}>
 
 \bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }
 
-\bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 }
-
- 
+\bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 } 
 
 \end{thebibliography}
+\clearpage
+\appendix
+\section{Stakeholder Elicitation Plan}
+\includepdf[pages={-}]{appendix/stake_eli_plan.pdf}
 
 \end{document}
