@@ -101,8 +101,7 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 		\textit{Term} & \textit{Definition} & \textit{Aliases} & \textit{Example} \\
 	\hline 
 		
-		WOMS	 & Work Order Management System & - & \\ \hline
-		
+		WOMS	 & Work Order Management System & - & \\ \hline	
 		ACME	 & The company for which this procurement project is being executed& The Company & \\	\hline
 		COTS	 & Commercial Of The Shelf & - & \\ \hline
 		Project team & The core group of people responsible for this project & - & \\ \hline
@@ -219,7 +218,7 @@ The table in section 4.1 describes each of the process in the procurement projec
 \subsection{Table of Requirement Engineering Phases}
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{2cm}| p{4cm} |l | p{2cm}| p{1cm}|}
+	\begin{tabular}{|p{2cm}| p{4cm} |l | p{2cm}| c|}
 	\hline
 		\textit{Phase} & \textit{Activities} &  \textit{Time} & \textit{Completion Date} & \textit{Time} \\
 	\hline
@@ -239,10 +238,10 @@ The table in section 4.1 describes each of the process in the procurement projec
 		Specification & Create URD & 90& 2 Feb &\\ \cline{2-4}
 				 & Create SRS & 90& 13 Feb &180\\ \cline{2-4}
 				 \hline
-		Validation & Peer Review& 18& 20 Feb Feb &\\ \cline{2-4}
+		Validation & Peer Review& 18& 20 Feb &\\ \cline{2-4}
 				 & Iterate & 18& 1 Mar &36\\ \cline{2-4}
 				 \hline
-		Manage & Create CCCP\&CCB & 49& 1 March &\\ \cline{2-4}
+		Manage & Create CCCP \& CCB & 49& 1 Mar &\\ \cline{2-4}
 				 & Manage changing requirements & 140& N/A &189\\ \cline{2-4} 
 		\hline
 	
@@ -308,7 +307,7 @@ Adapting this model, the activities in this process will be:
 
 
 
-A Process Map technique fulfill the purpose to model the business. The activity will yield manageable information over the business processes for the WOMS (based upon the elicitated requirements from section \ref{subsub:the_requirements_elicitation}). The output may also suggest improvements for other business processes \cite{gott4}, e.g. perhaps processes in the Call Center departement how they handle customers turn out to be improvable. Furthermore, Gottesdiener proclaims that one can use the output from a Process Map model as input to a Use Case and also to a Data Model activity\cite{gott4}.
+A Process Map technique fulfill the purpose to model the business. The activity will yield manageable information over the business processes for the WOMS (based upon the elicited requirements from section \ref{subsub:the_requirements_elicitation}). The output may also suggest improvements for other business processes \cite{gott4}, e.g. perhaps processes in the Call Center department how they handle customers turn out to be improvable. Furthermore, Gottesdiener proclaims that one can use the output from a Process Map model as input to a Use Case and also to a Data Model activity\cite{gott4}.
       The Context Diagram (CD) together with the Business Policies (BP) activity are selected to define this project's scope. The BP activity is also motivated as ACME has stated and is following a number of policies/principles, see 1.2. In addition, output from the CD model can also be useful input to the Use Case activity and to the Data Model activity\cite{gott4} while the BP model support the Business Rules activity \cite{gott4}.
      The last three activities - Business Rules (BR), Use Cases (UC), and Data Model (DM) - are chosen because not only do they make use of output from earlier activities, they co-operate with each other, providing output as input, in a circular way. Activity relationships are illustrated in figure \ref{figure:business}
      
@@ -331,7 +330,7 @@ The third process is to specify all the requirements according to a uniform stan
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/specifications_model.png}
-	\caption{Gottesdiener's model for specificaton of requirements\cite{gott5}}
+	\caption{Gottesdiener's model for specification of requirements\cite{gott5}}
 	\label{figure:specifications}
 \end{figure}
 
@@ -382,7 +381,7 @@ The goal of this phase is to retrieve different proposals so the one that best s
 \label{sub:evaluation_negotiation_and_contract}
 In this phase, the final phase of the procurement project, the goal of this phase is to find the best vendor and sign a contract with this vendor. The input to this phase will be the list of different proposals that are collected in the previous phase. The output will be a finalized contract, signed by both ACME and the selected vendor. 
 
-This phase will use the whole project team when evaluating the different vendors and a light selection of which vendors to proceed with will be made. The resulting vendors will be presented to the COO and called to negotiations meetings. Further selection of vendors will be made and, if needed, extra negotiations meeting will be conducted. The negotiations meetings will be held by Mrs. Howard and the selections will be made by done by her and the COO. When the winning vendor has been elected, with a final contract specified by the negotiations, the contract will be signed by the vendor and the COO together with the Purchasing Team.
+This phase will use the whole project team when evaluating the different vendors and a light selection of which vendors to proceed with will be made. The evaluation will be executed according to Carnegie Mellon model \cite{eval}. The resulting vendors will be presented to the COO and called to negotiations meetings. Further selection of vendors will be made and, if needed, extra negotiations meeting will be conducted. The negotiations meetings will be held by Mrs. Howard and the selections will be made by done by her and the COO. When the winning vendor has been elected, with a final contract specified by the negotiations, the contract will be signed by the vendor and the COO together with the Purchasing Team.
 
 As specified in section \ref{subsub:manage_the_requirements}, the COO is a part of the CCB, he has therefore a very important role in the negotiation activity and in the creation of the contract. His role here is to ensure that the contract clearly specify how the management of the requirements will be handled after the contract is signed.
  
@@ -448,7 +447,9 @@ The URD document will use the business standard PSS-05, specified by the Europea
 
 \bibitem{B} \emph{Work Order Management Systems Basics: Appendix B}
 
-\bibitem{I} \emph{Project plan for procurement project: Assignment I}
+\bibitem{I} \emph{Project plan for procurement project: Assignment I}    
+
+\bibitem{eval} \emph{Santiago Comella-Dorda, John Dean. Grace, Lewis. Edwin, Morris. Oberndorf, Patricia. Harper, Erin. \textsl{"A Process for COTS Software Product Evaluation"}. SEI, 2004}
 
 \bibitem{coleyconsulting} \emph{\textsl{"MoSCoW Prioritisation"} Gathered 2012-11-20} <\url{http://www.coleyconsulting.co.uk/moscow.htm}>
 
