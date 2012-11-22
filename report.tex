@@ -25,16 +25,29 @@
 \author{Henrik Sohlberg <\href{mailto:hsoh@kth.se}{hsoh@kth.se}> %
 \and Christian Wemstad <\href{mailto:wemstad@kth.se}{wemstad@kth.se}> %
 }
-\date{\today}
+
 
 \begin{document}
 
 \maketitle
 
 \newpage
-          
+\section*{Version table}
+\label{sec:version_tabel}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+			\textit{Version} & \textit{Change log} & \textit{User}\\
+		\hline
+		     v. 1 & First version & Mr. Wemstad and Mr. Sohlberg \\
+		\hline
+	\end{tabular}
+\end{table}
+\newpage       
 \tableofcontents
 \newpage
+\setcounter{page}{1}
 \section{Background}
 \label{sec:background}
 This document is a project plan for the procurement project of ?<Name goes here>?. The ?< Name goes here>? project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
@@ -368,6 +381,13 @@ such as Event-Response table & Christian Wemstad \\ \hline
 \section{Document Rules} 
 \label{sec:document_rules}
 
+To easy understand what files are included in the project a unified way of writing, editing and handling documents. 
+
+All the files shall have a version table in the beginning of the document and the current version of the file shall be specified in the end of the document name.
+
+ 
+\subsection{Document Standards}
+\label{sub:document_standards}
 The URD document will use the business standard PSS-05, specified by the European Space Agency\cite{PSS}. The SRS will be specified using IEEE STD 830-1998 \cite{IEEE}. Using these standard is for completeness and consistency reasons.The PSS-05 format will also add processes in how to write requirements and with this we can be certain that the requirements are specified correctly. Furthermore, using a well known standard will increase the readability for any reader already familiar with the bot the PSS-05 standard as well as IEEE STD 830-1998.
 
 \addcontentsline{toc}{section}{References}
