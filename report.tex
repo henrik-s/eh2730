@@ -6,7 +6,7 @@
 \usepackage{textcomp}
 \usepackage{multirow}
 \usepackage{float}
-
+\usepackage{fancyhdr}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -26,9 +26,13 @@
 \and Christian Wemstad <\href{mailto:wemstad@kth.se}{wemstad@kth.se}> %
 }
 
+\fancyhf{}
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyfoot[C]{\thepage}
 
 \begin{document}
-
+\pagestyle{empty}
 \maketitle
 
 \newpage
@@ -47,6 +51,7 @@
 \newpage       
 \tableofcontents
 \newpage
+\pagestyle{fancy}
 \setcounter{page}{1}
 \section{Background}
 \label{sec:background}
