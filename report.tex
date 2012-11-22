@@ -96,27 +96,27 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{2cm}| p{3cm} |c| p{3cm} |}
+	\begin{tabular}{|p{2cm}| p{6cm} |c|}
 	\hline
-		\textit{Term} & \textit{Definition} & \textit{Aliases} & \textit{Example} \\
+		\textit{Term} & \textit{Definition} & \textit{Aliases} \\
 	\hline 
 		
-		WOMS	 & Work Order Management System & - & \\ \hline	
-		ACME	 & The company for which this procurement project is being executed& The Company & \\	\hline
-		COTS	 & Commercial Of The Shelf & - & \\ \hline
-		Project team & The core group of people responsible for this project & - & \\ \hline
-		Junior Consultants & 2 members of the consultants agency responsible for this document, also members of the Project team & - & \\ \hline
-		URD & User Requirements Document & - & \\ \hline
-		NIS	& Network information system & - & \\	\hline	
-		SCAD	A & Supervisory Control And Data Acquisition & - & \\  \hline
-		DMS & Distribution Management System & - & \\ \hline
-		CCB	& Change Control Board & - & \\ \hline
-		CCPP	 & Change Control Policies and Procedures & - & \\ \hline
-		COO	& Chief Operations Officer & - & \\ \hline
-		PDA	& Personal Digital Assistant & - & \\ \hline
-		SVN & Software Versioning And Revision Control System & Apache Subversion & \\ 
-		URD & User requirements document & - &\\
-		SRS & Software Requirements Specification & - & \\  
+		WOMS	 & Work Order Management System & - \\ \hline	
+		ACME	 & The company for which this procurement project is being executed& The Company \\	\hline
+		COTS	 & Commercial Of The Shelf & -\\ \hline
+		Project team & The core group of people responsible for this project & - \\ \hline
+		Junior Consultants & 2 members of the consultants agency responsible for this document, also members of the Project team & - \\ \hline
+		URD & User Requirements Document & -\\ \hline
+		NIS	& Network information system & - \\	\hline	
+		SCAD	A & Supervisory Control And Data Acquisition & -\\  \hline
+		DMS & Distribution Management System & -\\ \hline
+		CCB	& Change Control Board & -\\ \hline
+		CCPP	 & Change Control Policies and Procedures & -\\ \hline
+		COO	& Chief Operations Officer & -\\ \hline
+		PDA	& Personal Digital Assistant & -\\ \hline
+		SVN & Software Versioning And Revision Control System & Apache Subversion\\ \hline
+		URD & User requirements document & -\\ \hline
+		SRS & Software Requirements Specification & -\\ \hline
 
 	\hline
 	
@@ -126,22 +126,24 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 
 \section{Goals} 
 \label{sec:goals}
-The goal and purpose with procuring a WOMS is to have a system that can dispatch, prioritize and monitor work orders. It should also provide analysis functionality such as statistics on the  HAHAHAHAHAAHHAHA
+The main costs of ACME's business are maintenance, repair and construction and the survey (section \ref{sub:prior_work}) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME company. Within the same scope, another goal is to tackle the "12 hour outage penalty" issue by cutting the costs for this post in half. 
 
-The main costs of ACME's business are maintenance, repair and construction and the survey (section 1.1) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME company. Within the same scope, another goal is to tackle the "12 hour outage penalty" issue by cutting the costs for this post in half. 
+Another major cost can be found in the customer care division. A WOMS can support this process, providing function and service to improvement and optimization. Therefore, two goals will be lowering: the number of incoming ''customer complaining cases'', and the average spent time for a customer care employee on a average case.
 
-Another major cost can be found in the customer care division. A WOMS can support this process, providing function and service to improvement and optimization. Therefore, two goals will be lowering: the number of incoming ''customer complaining cases'', and the average time for each case.
+The project goals are alligned with the three milestones for this project: deliver a URD and a SRS, hand out a request for proposal to vendors, and the final goal - signing the contract for implementation of a WOMS to the customer ACME.
 \subsection{Business Goals}
 \begin{itemize}
-\item Reduce the expenses for the maintenance/repair/construction post to $<100\%$ of industry average, till 1 May 2016
-\item Lower the costs for "12 hour outage penalty" cases by 50\% till 1 May 2015
-\item A 30\% decrease of costs for the customer care team division
-\item Replace 20\% of the manual process with automated within the customer care team
+\item Reduce the expenses for the maintenance/repair/construction post to \\$<100\%$ of industry average, by May 1st 2016
+\item Lower the costs for "12 hour outage penalty" cases by 50\%, by May 1st 2015
+\item A 30\% decrease of costs for the customer care team division, by May 1st 2016
+\item Replace 20\% of the manual process with automated within the customer care team, over a two year period from May 1st 2013.
 \end{itemize}
-
+All the business goals will be compared to economic report for the time period January 1st 2012 to December 31st 2012
 \subsection{Project Goals}
 \begin{itemize}
-\item Procure and install a Work Order Management System
+\item Deliver a URD and a SRS by March 1st 2013
+\item Hand out a request for a proposal to relevant vendors, at least five, by March 10th 2013
+\item Sign a contract for implementation of the WOMS, by May 1st 2013
 \end{itemize}
 
 \section{Organization}
@@ -187,7 +189,7 @@ How the stakeholder is planned to be involved in the different activities in the
 
 \section{Project Model} 
 \label{sec:project_model}
-The purpose of this project is to find a WOMS system that will fulfill the goals specified in section 2. Since a WOMS system is a general specified system type that can be delivered from a multiple of different distributors the cheapest and simplest way to get one of these system is to buy a COTS system. One of the biggest challenges in selecting a COTS system is selecting a system that best fits the needs of the customer. To be able to do this type of selection we need to specify and analyze the requirements and needs the company have on this system. To successfully do this, this procurement project will embrace requirement engineering and the whole project have been divided into 4 phases, illustrated in figure \ref{figure:procure}. See section 5 for more information about the each phases in the model.
+The purpose of this project is to find a WOMS system that will fulfill the goals specified in section 2. Since a WOMS system is a general specified system type that can be delivered from a multiple of different distributors the cheapest and simplest way to get one of these system is to buy a COTS system. One of the biggest challenges in selecting a COTS system is selecting a system that best fits the needs of the customer. To be able to do this type of selection we need to specify and analyze the requirements and needs the company have on this system. To successfully do this, this procurement project will embrace requirement engineering and the whole procurement project have been divided into 4 phases, illustrated in figure \ref{figure:procure}. See section 5 for more information about the each phases in the model.
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/procurement.png}
 	\caption{Different phases in the procurement project \cite{A}}
@@ -257,7 +259,7 @@ In the Pre-Study process there are five requirement engineering phase, described
 \subsubsection{The Requirements Elicitation}
 \label{subsub:the_requirements_elicitation}
 
-The first step in the pre-study process is to elicitate all the requirements for the new WOMS software. This will be done through a series of different activities. The input to this phase will be the prior work, a vision statement and the stakeholder categorization as well as stakeholder profiles. The output will be a list of elicitated requirements. This phase is processed through the following activities which adapt to the model fig \ref{figure:elicitation}. 
+The first step in the pre-study process is to elicit all the requirements for the new WOMS software. This will be done through a series of different activities. The input to this phase will be the prior work, a vision statement and the stakeholder categorization as well as stakeholder profiles. The output will be a list of elicited requirements. This phase is processed through the following activities which adapt to the model fig \ref{figure:elicitation}. 
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/elicitation_model.png}
@@ -308,7 +310,9 @@ Adapting this model, the activities in this process will be:
 
 
 A Process Map technique fulfill the purpose to model the business. The activity will yield manageable information over the business processes for the WOMS (based upon the elicited requirements from section \ref{subsub:the_requirements_elicitation}). The output may also suggest improvements for other business processes \cite{gott4}, e.g. perhaps processes in the Call Center department how they handle customers turn out to be improvable. Furthermore, Gottesdiener proclaims that one can use the output from a Process Map model as input to a Use Case and also to a Data Model activity \cite{gott4}.
+
       The Context Diagram (CD) together with the Business Policies (BP) activity are selected to define this project's scope. The BP activity is also motivated as ACME has stated and is following a number of policies/principles, see 1.2. In addition, output from the CD model can also be useful input to the Use Case activity and to the Data Model activity \cite{gott4} while the BP model support the Business Rules activity \cite{gott4}.
+
      The last three activities - Business Rules (BR), Use Cases (UC), and Data Model (DM) - are chosen because not only do they make use of output from earlier activities, they co-operate with each other, providing output as input, in a circular way. Activity relationships are illustrated in figure \ref{figure:business}.
      
 \begin{figure}[H]
@@ -330,12 +334,12 @@ The third process is to specify all the requirements according to a uniform stan
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/specifications_model.png}
-	\caption{Gottesdiener's model for specificaton of requirements \cite{gott5}}
-
+	\caption{Gottesdiener's model for specification of requirements \cite{gott5}}
 	\label{figure:specifications}
 \end{figure}
 
-Gottesdiener's model starts with \textbf{Document the user requirements}, it aims to rewrite the requirements with the user as the audience and collect all the of these requirements in document. The second step in Gottesdiener's model is \textbf{Verify the user needs}; this part focuses on verifying that the requirements previously specified are complete and understandable from the different users point of view. Gottesdiener explains that specifying the user requirements in this way gives a more solid definition of the requirements, both in the the extra detail that this activity results in as well as the fact that this activity unifies all the requirements from the different stakeholder groups. \cite{gott5}. The final version of this document should give the user a good view of what they can expect of new system and how this new system will change the way they work \cite{gott5}. The step \textbf{Document the software requirements} aims on specifying the requirements from the software developers point of view. Furthermore will this document focus on functional requirements, quality attributes constraints and external interfaces to other systems \cite{gott5}. This document is also crucial for the requirements since it will work as a contract between the company and the external system suppliers delivering the WOMS \cite{gott5}. This document gives a much more in detail specification on what will be delivered than what would be possible with only a standard ("non requiremental") contract. 
+
+Gottesdiener's model starts with \textbf{Document the user requirements}, it aims to rewrite the requirements with the user as the audience and collect all the of these requirements in document. The second step in Gottesdiener's model is \textbf{Verify the user needs}; this part focuses on verifying that the requirements previously specified are complete and understandable from the different users point of view. Gottesdiener explains that specifying the user requirements in this way gives a more solid definition of the requirements, both in the the extra detail that this activity results in as well as the fact that this activity unifies all the requirements from the different stakeholder groups \cite{gott5}. The final version of this document should give the user a good view of what they can expect of new system and how this new system will change the way they work \cite{gott5}. The step \textbf{Document the software requirements} aims on specifying the requirements from the software developers point of view. Furthermore will this document focus on functional requirements, quality attributes constraints and external interfaces to other systems \cite{gott5}. This document is also crucial for the requirements since it will work as a contract between the company and the external system suppliers delivering the WOMS \cite{gott5}. This document gives a much more in detail specification on what will be delivered than what would be possible with only a standard ("non requiremental") contract. 
 
 When applying this model to this project we will assign the project team the responsibility to create the URD and the SRS. The project team will start creating this document by using the models created in section \ref{subsub:the_requirements_analysis}.  Given that the project team consists of 3 people from 3 different direct user categories, specified in the figure \ref{figure:stakeholder_categorization}, and the fact that the created models from section \ref{subsub:the_requirements_analysis} come from sound user requirements elicitations. This gives us confidence enough to not plan any extra meetings with the stakeholders in this activity and instead let the project team create this document on their own. This decision will result in time-savings without any major losses. When using Gottesdiener's model we will try to merge the first and the second step together, creating one unit that both document and verify the user requirements. The reason for doing this change is that we view this as such an iterative process, going back and forth between documenting and verifying, that they cannot be separated in an efficient manner.  
 
@@ -382,13 +386,13 @@ The goal of this phase is to retrieve different proposals so the one that best s
 \label{sub:evaluation_negotiation_and_contract}
 In this phase, the final phase of the procurement project, the goal of this phase is to find the best vendor and sign a contract with this vendor. The input to this phase will be the list of different proposals that are collected in the previous phase. The output will be a finalized contract, signed by both ACME and the selected vendor. 
 
-This phase will use the whole project team when evaluating the different vendors and a light selection of which vendors to proceed with will be made. The evaluation will be executed according to Carnegie Mellon model \cite{eval}. The resulting vendors will be presented to the COO and called to negotiations meetings. Further selection of vendors will be made and, if needed, extra negotiations meeting will be conducted. The negotiations meetings will be held by Mrs. Howard and the selections will be made by done by her and the COO. When the winning vendor has been elected, with a final contract specified by the negotiations, the contract will be signed by the vendor and the COO together with the Purchasing Team.
+This phase will use the whole project team when evaluating the different vendors and a light selection of which vendors to proceed with will be made. The evaluation will be executed according to Carnegie Mellon process \cite{eval}. The resulting vendors will be presented to the COO and called to negotiations meetings. Further selection of vendors will be made and, if needed, extra negotiations meeting will be conducted. The negotiations meetings will be held by Mrs. Howard and the selections will be made by done by her and the COO. When the winning vendor has been elected, with a final contract specified by the negotiations, the contract will be signed by the vendor and the COO together with the Purchasing Team.
 
 As specified in section \ref{subsub:manage_the_requirements}, the COO is a part of the CCB, he has therefore a very important role in the negotiation activity and in the creation of the contract. His role here is to ensure that the contract clearly specify how the management of the requirements will be handled after the contract is signed.
  
 \section{Risk Analysis}
 \label{sec:risk_analysis}
-For probably every project, having a risk management strategy is of great importance because the occurrence of changes and unpredictable events lies in project management's nature \cite{källa?}. The primary focus of this project plan is on requirements. In this section, a risk analysis created according to Gottesdiener Requirement Risk Mitigation Strategy \cite{gott2}, is presented. 
+For probably every project, having a risk management strategy is of great importance because the occurrence of changes and unpredictable events lies in project management's nature \cite{maylor}. The primary focus of this project plan is on requirements. In this section, a risk analysis created according to Gottesdiener Requirement Risk Mitigation Strategy \cite{gott2}, is presented. 
 
 \begin{table}[H]
 	\centering
@@ -422,7 +426,7 @@ All files will be stored on ACME's own SVN server, using the standard backup sys
  
 \subsection{Document Standards}
 \label{sub:document_standards}
-The URD document will use the business standard PSS-05, specified by the European Space Agency \cite{PSS}. The SRS will be specified using IEEE STD 830-1998 \cite{IEEE}. Using these standard is for completeness and consistency reasons.The PSS-05 format will also add processes in how to write requirements and with this we can be certain that the requirements are specified correctly. Furthermore, using a well known standard will increase the readability for any reader already familiar with the bot the PSS-05 standard as well as IEEE STD 830-1998.
+The URD document will use the business standard \emph{PSS-05}, specified by the European Space Agency\cite{PSS}. The SRS will be specified using \emph{IEEE STD 830-1998} \cite{IEEE}. Using these standard is for completeness and consistency reasons.The \emph{PSS-05} format will also add processes in how to write requirements and with this we can be certain that the requirements are specified correctly. Furthermore, using a well known standard will increase the readability for any reader already familiar with the bot the PSS-05 standard as well as IEEE STD 830-1998.
 
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{99}     
@@ -457,7 +461,9 @@ The URD document will use the business standard PSS-05, specified by the Europea
 
 \bibitem{projectsmart} \emph{Singh, Manjeet. \textsl{"Rescuing Projects in Crisis: Project Turnaround Pointers"} Gathered 2012-11-20} <\url{http://www.projectsmart.co.uk/rescuing-projects-in-crisis.html}> 
 
-\bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }
+\bibitem{IEEE} \emph{\textsl{"IEEE Recommended Practice for Software Requirements Specifications", IEEE Std 830-1998}  }      
+
+\bibitem{maylor} \emph{Maylor, Harvey. \textsl{"Project Management", forth edition}. Financial Times, 2010}
 
 \bibitem{PSS} \emph{Mazza, Carlo. Fairclough, Jon. Melton, Bryan. de Pablo, Daniel. Scheffer, Adriaan. Stevens, Richard. \textsl{"Software Engineering Standards"}. Prentice-Hall International, 1994 } 
 
