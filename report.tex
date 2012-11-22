@@ -5,6 +5,7 @@
 \usepackage[english]{babel}
 \usepackage{textcomp}
 \usepackage{multirow}
+\usepackage{float}
 
 
 \usepackage{hyperref}
@@ -74,26 +75,27 @@ This project?s focus lies on implementing a WOMS system into the existing IT-sys
 \subsection{Glossary}
 \label{sub:glossary}
 
-\begin{table}[!ht]
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|p{2cm}| p{3cm} |l| p{3cm} |}
 	\hline
 		\textit{Term} & \textit{Definition} & \textit{Aliases} & \textit{Example} \\
-	\hline
+	\hline 
 		
-		WOMS	 & Work Order Management System & & \\
-		ACME	 & & The Company & \\	
-		COTS	 & & & \\		
-		Project team & & & \\			
-		Juinor Consultants	& & & \\		
-		URD & & & \\
-		NIS	& & & \\		
-		SCAD	A & & & \\ 			
-		DMS & & & \\
-		CCB	& & & \\
-		CCPP	 & & & \\
-		COO	& & & \\
-		PDA	& & & \\
+		WOMS	 & Work Order Management System & & \\ \hline
+		
+		ACME	 & The company for which this procurement project is being executed& The Company & \\	\hline
+		COTS	 & Commercial Of The Shelf & & \\ \hline
+		Project team & The core group of people responsible for this project & & \\ \hline
+		Juinor Consultants & 2 members of the consultants agency responsible for this document, also members of the Project team & & \\ \hline
+		URD & User Requirements Document & & \\ \hline
+		NIS	& Network information system & & \\	\hline	
+		SCAD	A & Supervisory Control And Data Acquisition & & \\  \hline
+		DMS & Distribution Management System & & \\ \hline
+		CCB	& Change Control Board & & \\ \hline
+		CCPP	 & Change Control Policies and Procedures & & \\ \hline
+		COO	& Chief Operations Officer & & \\ \hline
+		PDA	& Personal Digital Assistant & & \\ 
 
 	\hline
 	
@@ -112,7 +114,7 @@ This project?s focus lies on implementing a WOMS system into the existing IT-sys
 \label{sub:stakeholders}
 First we analyze and categorize the stakeholders using Gottesdiener method "Stakeholder categories". As described in the figure all the stakeholders will be divided into three different sub categories, customers, users and others. When this is done all of the sub categories are further splitted into two new underlying categories. When this is done, all the stakeholders have been assigned a category type. 
 
-\begin{figure}[!th]
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/stakeholder_categorization.png}
 	\caption{HAHAHAHHAHAHAHAHAHAHAHA}
 	\label{figure:stakeholder_categorization}
@@ -120,7 +122,7 @@ First we analyze and categorize the stakeholders using Gottesdiener method "Stak
 
 After all of the categorization of the stakeholders, a profilization of the stakeholder was conducted, see figure \ref{figure:stakeholder_profiles}. This was made to see what kind of involvement level, what interest, needs, concerns, constrains and success criteria each of the stakeholder categories have.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/stakeholder_profiles.png}
 	\caption{HAHAHAHHAHAHAHAHAHAHAHA}
 	\label{figure:stakeholder_profiles}
@@ -131,11 +133,11 @@ After all of the categorization of the stakeholders, a profilization of the stak
 Finally a project team is created. This project team consists of the consultants from the consulting agency and 3 direct users. The direct users come from different parts of the company and will because of this have different input to the WOMS. From the stakeholder profilization table it stood clear that monitoring team, maintenance and expansion team, and call center team was the most involved in the changes the WOMS will make and were therefore specified as the most important stakeholder groups to have in the project team. Selected members to the project team are therefore:
 \begin{itemize}
 \item Mrs. Howard		- Consulting Agency
-\item Henrik Sohlberg	- Consulting Agency
-\item Christian Wemstad	- Consulting Agency
+\item Mr Sohlberg	- Consulting Agency
+\item Mr Wemstad	- Consulting Agency
 \item Mrs Praxton		- Monitoring Team
 \item Mr Flaxton		- Maintenance and Expansion Team
-\item Mr Braxton		- Call Center Team
+\item Mrs Braxton		- Call Center Team
 \end{itemize}
 
 
@@ -160,7 +162,7 @@ We would have liked to have the field personnel in the project team as well but 
 
 The first step in the pre-study phase is to elicitate all the requirements for the new WOMS software. This will be done through a series of different activities. The input to this phase will be the prior work, a vision statement and the stakeholder categorization as well as stakeholder profiles. The output will be a list of elicitated requirements. This phase is processed through the following activities which adapt to the model fig \ref{figure:elicitation}. 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/elicitation_model.png}
 	\caption{HAHAHAHAHAHAHAHAHAHAAHAHAHAHAH}
 	\label{figure:elicitation}
@@ -179,7 +181,7 @@ In addition to the two activities, we plan to interview the leftover stakeholder
 \label{subsub:the_requirements_analysis}
 The second process in the pre-study and planning stage is analysis of the requirements. The input is a list of elicited requirements, found in section \ref{subsub:the_requirements_elicitation}. The output will be a prioritized list of requirements and requirement models that will be used in later stages.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=0.3\textwidth]{images/analysis_model.png}
 	\caption{HAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAH}
@@ -212,7 +214,7 @@ A Process Map technique fulfill the purpose to model the business. The activity 
       The Context Diagram (CD) together with the Business Policies (BP) activity are selected to define this project?s scope. The BP activity is also motivated as ACME has stated and is following a number of policies/principles, see 1.2. In addition, output from the CD model can also be useful input to the Use Case activity and to the Data Model activity\cite{gott131} while the BP model support the Business Rules activity \cite{gott143}.
      The last three activities - Business Rules (BR), Use Cases (UC), and Data Model (DM) - are chosen because not only do they make use of output from earlier activities, they co-operate with each other, providing output as input, in a circular way. Activity relationships are illustrated in figure \ref{figure:business}
      
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/model_the_business.png}
 	\caption{HAHAHAHAHAHAHAHAHAHAHAHA}
@@ -228,7 +230,7 @@ The last planned activity in this phase is Prioritization using the MoSCoW metho
 
 The third process is to specify all the requirements according to a uniform standard. The goal with this phase is to verify that the requirements that have been listed and analyzed are connected to the goals with the project and actually fulfill all of the specified goals\ref{sec:goals}. According to Gottesdiener\cite{gott232} this can be done by using a 4-steps model visualized in figure \ref{figure:specifications}. Gottesdiener specifies that the requirement. The input for this process will be the analyzed models from \ref{subsub:the_requirements_analysis} and the stakeholder profiles. The output will be a User Requirements Document (URD) and a Software Requirements Specification (SRS).
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/specifications_model.png}
 	\caption{HAHAHAHAHAHHAHAHA}
@@ -244,7 +246,7 @@ When applying this model to this project we will assign the project team the res
 The fourth process the implementation can start is to validate that the specified requirements. In difference to the different validation steps in the other phases this phase focuses on how the requirements are specified. I.e "Did we get the requirements right?" rather than "Did we get the right requirement?". The purpose of spending time on this phase is therefore to validate that all the requirements are ambiguous and specified correctly. It is also important to find unnecessary, lacking or faulty requirements and to correct these\cite{gott261262}. In is really important to understand that this phase should not be executed as a last step. It  should be an iterative process that progresses alongside with the other steps, constantly validating the current progress in the requirements engineering\cite{gott261262}. Gottesdiener specifies the validation phase into 4-different steps, according to the figure \ref{figure:validation}\cite{gott261262}. 
 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=1\textwidth]{images/validations_model.png}
 	\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAH}
