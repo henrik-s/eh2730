@@ -123,7 +123,23 @@ This project's focus lies on implementing a WOMS system into the existing IT-sys
 
 \section{Goals} 
 \label{sec:goals}
+The goal and purpose with procuring a WOMS is to have a system that can dispatch, prioritize and monitor work orders. It should also provide analysis functionality such as statistics on the  HAHAHAHAHAAHHAHA
 
+The main costs of ACME's business are maintenance, repair and construction and the survey (section 1.1) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME company. Within the same scope, another goal is to tackle the ''12 hour outage penalty'' issue by cutting the costs for this post in half. 
+
+Another major cost can be found in the customer care division. A WOMS can support this process, providing function and service to improvement and optimization. Therefore, two goals will be lowering: the number of incoming ''customer complaining cases'', and the average time for each case.
+\subsection{Business Goals}
+\begin{itemize}
+\item Reduce the expenses for the maintenance/repair/construction post to $<100\%$ of industry average, till 1 May 2016
+\item Lower the costs for ''12 hour outage penalty'' cases by 50\% till 1 May 2015
+\item A 30\% decrease of costs for the customer care team division
+\item Replace 20\% of the manual process with automated within the customer care team
+\end{itemize}
+
+\subsection{Project Goals}
+\begin{itemize}
+\item Procure and install a Work Order Management System
+\end{itemize}
 
 \section{Organization}
 \label{sec:organization}
@@ -168,27 +184,34 @@ We would have liked to have the field personnel in the project team as well but 
 
 \section{Project Model} 
 \label{sec:project_model}
+The purpose of this project is to find a WOMS system that will fulfil the goals specified in section 2. Since a WOMS system is a general specified system type that can be delivered from a multiple of different distributors the cheapest and simplest way to get one of these system is to buy a COTS system. One of the biggest challenges in selecting a COTS system is selecting a system that best fits the needs of the customer. To be able to do this type of selection we need to specify and analyze the requirements and needs the company have on this system. To successfully do this, this procurement project will embrace requirement engineering and the whole project have been divided into 4 phases, illustrated in figure \ref{figure:procure}. See section 5 for more information about the each phases in the model.
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{images/procurement.png}
+	\caption{Different phases in the procurement project, \cite{appendix_a}}
+	\label{figure:procure}
+\end{figure}
+The table in section 4.1 describes each of the process in the procurement project model, figure \ref{figure:procure}. The \emph{Pre-Study} phase contain the five requirement engineering phases found in section 4.2. The estimated time for each process, phase, and activity is calculated according to the conditions: the time available is 1000 hour and the contract must be signed till 1 May 2013 \cite{appendix_a}. The time is determined by which stakeholders are involved in each activity, see section 3.2. Each activity is estimated with planning, execution, documentation, and re-iteration in mind.
 \subsection{Table of Processes}
 \begin{table}[!ht]
 	\centering
 	\begin{tabular}{|p{2cm}| p{3cm} |l| p{2cm} | p{1.1cm} | p{1.7cm}|}
 	\hline
-		\textit{Process} & \textit{Phases} & \textit{Input} & \textit{Output} & \textit{Time (h)} & \textit{Completion Date} \\
+		\textit{Process} & \textit{Phases} & \textit{Time (h)} & \textit{Completion Date} \\
 	\hline
-		Pre-Study & Elicitation & Prior work,  & & 750 & 1 Mar\\
-				  & Analysis & vision statement& &  & \\
-				  & Specification & and the risk& & & \\
-				  & Validation & mitigation strategy & & & \\
-				  & Management* & & & &\\ \hline
-		Request For Proposal & - & & & 100&10 Mar\\ \hline
-		Proposals & - & & & 2&10 Apr\\ \hline
-		Evaluation, &  & & & 140&1 May\\
-		negotiation, & - & & & &\\
-		contract & & & & &\\
+		Pre-Study & Elicitation &  750 & 1 Mar\\
+				  & Analysis & & \\
+				  & Specification & & \\
+				  & Validation & & \\
+				  & Management* & &\\ \hline
+		Request For Proposal & - & 100 &10 Mar\\ \hline
+		Proposals & - & 2&10 Apr\\ \hline
+		Evaluation, &  &  140&1 May\\
+		negotiation, & - & & \\
+		contract & & & \\
 	\hline
-	
 	\end{tabular}
 \end{table}
+* The \emph{management of requirements} phase will continue after the pre-study is past \cite{gott7}.
 \subsection{Table of Requirement Engineering Phases}
 \begin{table}[H]
 	\centering
@@ -231,7 +254,7 @@ We would have liked to have the field personnel in the project team as well but 
 \subsubsection{The Requirements Elicitation}
 \label{subsub:the_requirements_elicitation}
 
-The first step in the pre-study phase is to elicitate all the requirements for the new WOMS software. This will be done through a series of different activities. The input to this phase will be the prior work, a vision statement and the stakeholder categorization as well as stakeholder profiles. The output will be a list of elicitated requirements. This phase is processed through the following activities which adapt to the model fig \ref{figure:elicitation}. 
+The first step in the pre-study process is to elicitate all the requirements for the new WOMS software. This will be done through a series of different activities. The input to this phase will be the prior work, a vision statement and the stakeholder categorization as well as stakeholder profiles. The output will be a list of elicitated requirements. This phase is processed through the following activities which adapt to the model fig \ref{figure:elicitation}. 
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{images/elicitation_model.png}
