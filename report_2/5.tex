@@ -4,13 +4,30 @@
 This section will handle all of the \textbf{Quality attributes}, also called non-functional attributes.  In difference to section \ref{sec:3}-\ref{sec:4} that describe what the new system shall do, the quality attributes describe how the system shall be\cite {idi.ntnu}.  Quality attributes can i.e. describe uptime requirements, system architecture and security requirements.
 Below, the \textbf{Quality attributes} for the WOMS system are listed. The requirements are categorized into security, safety, performance, reliability, availability, maintainability and interoperability	
 
-\begin{table}
-\label{table:5_requirements}
-\centering
-\begin{tabular}{|l|p{2cm}|p{2cm}|l|l|l|}
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
+\caption{Quality attributes}
+\label{table:5_requirements}\\
 \hline
-ID 		& Description & Comment & Category & Priority & Dependencies \\
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{Priority} & \textbf{Dependencies}\\
 \hline
+\endfirsthead
+
+\multicolumn{6}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{6}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\hline
+
 QA-1	& The WOMS shall have a $95\%$ rate of picking the most appropriate field technician & Validated through testing &	Reliability & Must & \\
 QA-2	& The WOMS always dispatch the highest prioritized WO first to field technicians. & Validated through testing & Reliability & Must & \\
 QA-3	& The WOMS shall have an overall uptime of $99\%$ each month. & Validated through testing & Availability & Must & \\
@@ -19,9 +36,9 @@ QA-5	& The WOMS shall only allow 3 authorization attempts from each IP before th
 QA-6	& The WOMS shall auto logout a user if inactive, no input, for 15 minutes. & Validated through testing & Security & Must & \\
 QA-7	& The WOMS shall have customizable security settings for each user. & Validated through testing. Settings regarding, if allowed to edit, allowed to read or allowed to delete WOs. & Security & Must & \\
 QA-8	& Connections from outside of the ACME LAN to the WOMS shall be encrypted with TLS 1.2 & Validated through testing. & Security & Must & \\
-\hline
-\end{tabular}
-\caption{Quality attributes}
-\end{table}
+
+\end{longtable}
+\end{center}
+
 
 
