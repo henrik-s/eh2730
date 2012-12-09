@@ -13,47 +13,111 @@ The requirements in this section is elicited from the Appendix A document \cite{
 
 All of the requirements in this section will be prioritized according to the MosCoW scheme, in the same way as the requirements in section \ref{sec:functional_requirements}.	
 
-NOTE: No requirements on needed changes for other parts of the IT-system is listed here, only requirements that directly affect that WOMS are specified. I.e. there are no requirements on that the PDA needs to be able to connect to the LAN, see fig. \ref{figure:functional_requirements}, only requirements on how the PDA interacts with the WOMS while it’s on the LAN, more on these assumptions in \ref{chapter2ish} 
+NOTE: No requirements on needed changes for other parts of the IT-system is listed here, only requirements that directly affect that WOMS are specified. I.e. there are no requirements on that the PDA needs to be able to connect to the LAN, see fig. \ref{figure:functional_requirements}, only requirements on how the PDA interacts with the WOMS while it's on the LAN, more on these assumptions in \ref{chapter2ish} 
 
 \subsection{Software interfaces}
 \label{sub:software_interfaces}
 
 \textbf{Software interfaces} focuses on the connection the new WOMS will have with other system in the IT environment. Even though figure \ref{fig:internal_interfacese} states that the WOMS will act like any other server in the network, the integration between WOMS and the current systems are far greater than the integration between the current systems.  In table \ref{table:software_interfaces} the software interfaces requirements that are needed are listed.
 
-\begin{table}
-\label{table:4_1_requirements}
-\centering
-\begin{tabular}{|l|p{2cm}|p{2cm}|l|l|}
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:software_interfaces}\\
 \hline
-ID 		& Description & Comment & Priority & Dependencies \\
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies}\\
 \hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\hline
+
 ERI-SI-1& The WOMS shall access the ERP to read any data & & & \\
 ERI-SI-2& The WOMS shall access the ERP to update any data & & & \\
 ERI-SI-3& The WOMS shall access the ERP to delete any data & & & \\
 ERI-SI-4& The WOMS shall access the NIS to read any data & & & \\
 ERI-SI-5& The WOMS shall access the NIS  to modify any data & & & \\
 ERI-SI-6& The WOMS shall access the NIS  to delete any data & & & \\
-\hline
-\end{tabular}
-\caption{Quality attributes}
-\end{table}
+
+\end{longtable}
+\end{center}
 
 \subsection{Communication interfaces}
 \label{sub:communication_interfaces}
 
 The current interaction of the systems are based on ethernet connections, this will therefore be the main way the system connects with other systems in the network. Listed in table \ref{table:communication_interfaces} are all the requirements on the communication interfaces.
 
-\begin{table}
-\label{table:4_1_requirements}
-\centering
-\begin{tabular}{|l|p{2cm}|p{2cm}|l|l|}
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:communication_interfaces}\\
 \hline
-ID 		& Description & Comment & Priority & Dependencies \\
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies}\\
 \hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
 ERI-CI-1& All communication on the LAN, with the WOMS, shall be on ethernet. & & Must & \\
 ERI-CI-2& The WOMS only access way to units outside the ACME LAN is through the firewall, via ethernet. & Units, will be, but are not limited to, PDAs & Must & \\
 
+\end{longtable}
+\end{center}
+
+
+\subsection{Hardwar interfaces}
+\label{sub:hardwar_interfaces}
+
+A \textbf{Hardware interfaces} requirement is a requirement specifying what kind of other hardware that will communicate with the WOMS. The WOMS will need to be accessible from both internal workstations, as well as external PDAs, see fig. \ref{figure:functional_requirements}. To achieve this there are some hardware interfaces requirements that needs to be fulfilled:
+
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:communication_interfaces}\\
 \hline
-\end{tabular}
-\caption{Quality attributes}
-\end{table}
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies}\\
+\hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+ERI-HI-1& The WOMS shall exchange data with the all servers on the LAN. & Servers are, the NIS \& CIS server, the DMS server and the ERP server. & Must & \\
+ERI-CI-2& The WOMS shall be accessible from the Field Personal PDAs. & & Must & \\
+
+\end{longtable}
+\end{center} 
+
