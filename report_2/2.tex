@@ -15,6 +15,14 @@ The maintenance work is a large cost driver for ACME, as stated in the backgroun
 In this process, the stakeholders M/E together with the ACC are the main players. M/E analyze the different systems and existing equipment to identify maintenance work to be done. This includes browsing through information, such as how old a system/equipment is, giving indicators to maintenance needs. If M/E locate such necessity, they project a plan and handing it over to ACC who evaluate the plan and its constituents. ACC may find ways to reduce the costs of the plan, e.g. how spare parts will be bought, and finally decide whether it is valuable and motivated to send the plan as a request to PU - to have them sign it.
 
 The WOMS shall support this process by offer new data to M/E in their ''Analyze'' activity, e.g. fail-tendencies for different machineries. It shall also support the ''Project a plan'' activity in a similar way as it will provide data, e.g. statistics of how much time is spent maintaining certain systems/equipment, materials that is usually needed and so on, to make it easier to project better plans.
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/planning.png}}
+	\label{fig:planning}
+	\caption{Planning maintenance work}
+\end{figure}
 %
 \subsubsection{Creating Work Orders}
 \label{sec:bp2}
@@ -23,6 +31,14 @@ The \textbf{Creating work orders} process focuses on the way ACME handles work o
 In this process there are 3 different main users, MO, M/E and CC. This users have in earlier processes decided that a maintenance/repair/construction work is needed and want to create a work order. This work order then get automatically updated by the NIS to include all the relevant information about the components and other parts in the planned work order. The work order is then handled by the ERP as a new service where an automatic cost calculation is made. The PU will now read the calculations made by the ERP and they will have the final decision on whether or not to execute the work order, this is not done in the WOMS. The final decision is then delivered to the user specifying it in the first place.
 
 A WOMS will help in this process by being a center hub between all the different components in this process. To do this the WOMS needs to be able to transfer data between different systems and have working interfaces for all of these. All the different stakeholders needs to have the an interface that makes it possible for them to create and modify work orders, depending on their work title, which will be stored in the WOMS.
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/create.png}}
+	\label{fig:create}
+	\caption{Create work orders}
+\end{figure}
 %
 \subsubsection{Dispatching Maintenance/Repair Work to Technicians}
 \label{sec:bp3}
@@ -31,6 +47,15 @@ The \textbf{Dispatching maintenance/repair work to technicians} is triggered whe
 This process begins with - a work order operator (may be M/E or MO) has work orders to dispatch. Information such as the work order's priority, the skills and material needed helps the operator in the process of assigning the work order to a FT. Profiles of field technicians is also available including information such as their geographic position and their competence. Before a work order may be dispatched, the operator sends a request to FT who subsequently respond with an accept or deny. If it was accepted, a work order has been dispatched and this business process ends.
 
 WOMS is the underlying system which enables this process to be executed as recently described. Work order operators works directly with WOMS, viewing WO's and FT's profiles and using the system to interact with FT's. WOMS support the FT's activities as it feeds them with request and work orders, and also receives their responds to requests.
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/dispatch.png}}
+	\label{fig:planning}
+	\caption{Planning maintenance work}
+\end{figure}
+%
 \subsubsection{Carry Out Maintenance/Repair Work}
 \label{sec:bp4}
 \textbf{Carry Out Maintenance/Repair Work} affects the business goals GOAL-1, GOAL-2, and GOAL-3. GOALS-1 and GOALS-2 is pretty straightforward connected to this process, as how ACME and FT's carries out and executes work orders directly affects maintenance/repair/construction costs. We will see that costs within the CC division also are \textbf{indirectly} affected.
@@ -38,9 +63,14 @@ WOMS is the underlying system which enables this process to be executed as recen
 Figure \ref{fig:bp4} shows the start of the process. A FT has been assigned and is about to carry out a WO, thereby FT changes the status of the WO to \emph{ACTIVE}. He or she may also obtain information related to the WO, e.g. manuals. Next step is that FT estimates the time to completion for the current WO and shall also, anytime, during the maintenance work update the estimated time. Having this value to be as correct as possible increases the value of the customer care function (where customer contacts to get answers and information of e.g. an outage) - the more accurate information they have access to, the more satisfied customers will be. At last, when a WO is completed, FT shall report time and material used for the recent work. This information is used in other processes, e.g. \ref{sec:bp1} and \ref{sec:bp6}, and is also subject to a cost report entered in ERP system.
 
 WOMS will support this, first of all since it will be the system which enables the information flow within the process. FT's get the WO itself and its information from WOMS via their PDA. They also, via their PDA, send information to WOMS which stores the information (such as a WO's status, time-material reports). WOMS will also act as the ''forwarder'' of the cost report, sending it to ERP.
-%
-%
-%
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/carry.png}}
+	\label{fig:planning}
+	\caption{Planning maintenance work}
+\end{figure}
 %
 \subsubsection{Inform About Outages and Their Status}
 \label{bp5}
@@ -49,7 +79,15 @@ An important function in the ACME business is the relationship to their existing
 Figure \ref{fig:bp5} illustrates this process. Three stakeholders - M/E, MO, and FT - are providers of information concerning outages and their status. CC is the consumers of this information, and need to access it on customer demands. This data is located in the CIS.
 
 The WOMS will support this system as it will function as a man-in-the-middle system, with its purpose to greatly increase the quality of the outage information stored in CIS. As of today, this information is rarely completely updated \cite{appendixA}, a fact WOMS will extinguish. WOMS shall continuously update this information in CIS and as described in \ref{sec:bp4}, where FTs could update this information in real-time, the status of an outage will always be up to date. 
-
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/inform.png}}
+	\label{fig:planning}
+	\caption{Planning maintenance work}
+\end{figure}
+%
 \subsubsection{Analyze Cost and Repair Data}
 \label{bp6}
 The process of analyzing costs and repair data consequently is a precondition to be able to come up with new solutions and improvement for routines and procedures. These are causes leading to fulfill GOAL-1 and GOAL-2. 
@@ -57,6 +95,15 @@ The process of analyzing costs and repair data consequently is a precondition to
 The stakeholder ACC begins gathering information concerning costs originating from maintenance/repair/construction work, e.g. differences in costs that different contractors (FTs) accounts for similar work orders/services.  Next step is to analyze the collected data, resulting in perhaps (to continue with the aforementioned example) valuable knowledge of which contractors that shall be hired in the future and which are not. 
 
 WOMS supports this process by, simple, offer several types of statistics related to work orders. Such data is gathered by the system as we saw in process \ref{sec:bp4}. Today, this functionality is not provided by any system within ACME.
+\begin{figure}[H]
+	\centering
+	\setlength\fboxsep{7pt}
+	\setlength\fboxrule{0.5pt}
+	\fbox{\includegraphics[scale = 0.7]{images/inform.png}}
+	\label{fig:planning}
+	\caption{Planning maintenance work}
+\end{figure}
+%
 \subsection{Product Functions}
 
 \subsection{Assumption and Dependencies}
