@@ -23,7 +23,7 @@ NOTE: No requirements on needed changes for other parts of the IT-system is list
 \textbf{Software interfaces} focuses on the connection the new WOMS will have with other system in the IT environment. Even though figure \ref{fig:external_interfaces} states that the WOMS will act like any other server in the network, the integration between WOMS and the current systems are far greater than the integration between the current systems.  In table \ref{table:software_interfaces} the software interfaces requirements that are needed are listed.
 
 \begin{center}
-\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|}
 \caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
 \label{table:software_interfaces}\\
 \hline
@@ -47,11 +47,17 @@ NOTE: No requirements on needed changes for other parts of the IT-system is list
 \hline
 
 ERI-SI-1& The WOMS shall access the ERP to read any data & & & \\
+\hline
 ERI-SI-2& The WOMS shall access the ERP to update any data & & & \\
+\hline
 ERI-SI-3& The WOMS shall access the ERP to delete any data & & & \\
+\hline
 ERI-SI-4& The WOMS shall access the NIS to read any data & & & \\
+\hline
 ERI-SI-5& The WOMS shall access the NIS  to modify any data & & & \\
+\hline
 ERI-SI-6& The WOMS shall access the NIS  to delete any data & & & \\
+\hline
 
 \end{longtable}
 \end{center}
@@ -62,7 +68,7 @@ ERI-SI-6& The WOMS shall access the NIS  to delete any data & & & \\
 The current interaction of the systems are based on Ethernet connections, this will therefore be the main way the system connects with other systems in the network. Listed in table \ref{table:communication_interfaces} are all the requirements on the communication interfaces.
 
 \begin{center}
-\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|}
 \caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
 \label{table:communication_interfaces}\\
 \hline
@@ -84,7 +90,9 @@ The current interaction of the systems are based on Ethernet connections, this w
 \endlastfoot
 
 ERI-CI-1& All communication on the LAN, with the WOMS, shall be on Ethernet. & & Must & \\
+\hline
 ERI-CI-2& The WOMS only access way to units outside the ACME LAN is through the firewall, via Ethernet. & Units, will be, but are not limited to, PDAs & Must & \\
+\hline
 
 \end{longtable}
 \end{center}
@@ -96,7 +104,7 @@ ERI-CI-2& The WOMS only access way to units outside the ACME LAN is through the 
 A \textbf{Hardware interfaces} requirement is a requirement specifying what kind of other hardware that will communicate with the WOMS. The WOMS will need to be accessible from both internal workstations, as well as external PDAs, see fig. \ref{figure:functional_requirements}. To achieve this there are some hardware interfaces requirements that needs to be fulfilled:
 
 \begin{center}
-\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|}
+\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|}
 \caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
 \label{table:communication_interfaces}\\
 \hline
@@ -118,7 +126,9 @@ A \textbf{Hardware interfaces} requirement is a requirement specifying what kind
 \endlastfoot
 
 ERI-HI-1& The WOMS shall exchange data with the all servers on the LAN. & Servers are, the NIS \& CIS server, the DMS server and the ERP server. & Must & \\
+\hline
 ERI-CI-2& The WOMS shall be accessible from the Field Personal PDAs. & & Must & \\
+\hline
 
 \end{longtable}
 \end{center} 

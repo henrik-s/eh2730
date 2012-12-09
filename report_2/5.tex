@@ -5,7 +5,7 @@ This section will handle all of the \textbf{Quality attributes}, also called non
 Below, the \textbf{Quality attributes} for the WOMS system are listed. The requirements are categorized into security, safety, performance, reliability, availability, maintainability and interoperability	
 
 \begin{center}
-\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
+\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
 \caption{Quality attributes}
 \label{table:5_requirements}\\
 \hline
@@ -29,12 +29,19 @@ Below, the \textbf{Quality attributes} for the WOMS system are listed. The requi
 \hline
 
 QA-1	& The WOMS shall have a $95\%$ rate of picking the most appropriate field technician & Validated through testing &	Reliability & Must & \\
+\hline
 QA-2	& The WOMS always dispatch the highest prioritized WO first to field technicians. & Validated through testing & Reliability & Must & \\
+\hline
 QA-3	& The WOMS shall have an overall uptime of $99\%$ each month. & Validated through testing & Availability & Must & \\
+\hline
 QA-4	& The WOMS shall SQL-parse all input data so harmful inputs will not affect the database & Validated through testing , SQL-parsing means removing all illegal syntax from the text. & Safety & Must & \\
-QA-5	& The WOMS shall only allow 3 authorization attempts from each IP before the ip is blocked for 15 minutes. & Validated through testing & Security & Must & \\
+\hline
+QA-5	& The WOMS shall only allow 3 authorization attempts from each IP before the IP address is blocked for 15 minutes. & Validated through testing & Security & Must & \\
+\hline
 QA-6	& The WOMS shall auto logout a user if inactive, no input, for 15 minutes. & Validated through testing & Security & Must & \\
+\hline
 QA-7	& The WOMS shall have customizable security settings for each user. & Validated through testing. Settings regarding, if allowed to edit, allowed to read or allowed to delete WOs. & Security & Must & \\
+\hline
 QA-8	& Connections from outside of the ACME LAN to the WOMS shall be encrypted with TLS 1.2 & Validated through testing. & Security & Must & \\
 
 \end{longtable}
