@@ -31,15 +31,15 @@ In this section all the functional requirements connected to the business proces
 
 \hline
 
-FR-PMW-1 & & & & \\
+FR-PMW-1 &A M/E user shall access every work orders have been performed on a specified system equipment. & & & \\
 \hline
-FR-PMW-2 & & & & \\
+FR-PMW-2 &A M/E user shall access the time  past since the maintenance/repair/construction work has been performed on a specified system equipment.  & & & \\
 \hline
-FR-PMW-3 & & & & \\
+FR-PMW-3 &A M/E user shall access the age on a specified system equipment. & & & \\
 \hline
-FR-PMW-4 & & & & \\
+FR-PMW-4 &A M/E user shall be able to see a WO’s total execution time.  & & & \\
 \hline
-FR-PMW-5 & & & & \\
+FR-PMW-5 &A M/E user shall be able to see which spare parts were used to complete a WO. & & & \\
 \hline
 FR-PMW-6 & & & & \\
 \hline
@@ -63,7 +63,7 @@ FR-PMW-11& & & & \\
 \begin{center}
 \begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
 \caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
-\label{table:software_interfaces}\\
+\label{table:creating_a_work_order}\\
 \hline
 \textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
 \hline
@@ -84,27 +84,177 @@ FR-PMW-11& & & & \\
 
 \hline
 
-FR-CWO-1 &A user shall be able to create a new  WO.& A user is either a MO, ME or CC. & & \\
+FR-CWO-1 &A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & & \\
 \hline
-FR-CWO-2 &A user shall be able to edit a WO. & A user is either a MO, ME or CC.& & \\
+FR-CWO-2 &A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& & 3.2.1\\
 \hline
-FR-CWO-3 &The NIS shall be able to read the information in a WO & & & \\
+FR-CWO-3 &A user shall be able to edit a WO.  & A user is either a MO, M/E or CC user & & 3.2.1 \\
 \hline
-FR-CWO-4 &The NIS shall be able to add information to a WO & & & \\
+FR-CWO-4 &The WOMS shall be able gather system equipment manuals from the NIS. & & & \\
 \hline
-FR-CWO-5 &The ERP shall be able to read the  information in a WO & & & \\
+FR-CWO-5 &The WOMS shall be able to link system equipment manuals to WOs. & & & 3.2.3 \\
 \hline
-FR-CWO-6 &The ERP shall be able to add  information to  a WO & & & \\
+FR-CWO-6 &The WOMS shall be able to order a new service in the ERP system. & & & \\
 \hline
-FR-CWO-7 &A user shall be able to see if a WO is either active or denied & & & \\
+FR-CWO-7 &The WOMS shall be able to parse a service order response from the ERP system. &XXXXXXXXX & & \\
 \hline
-FR-CWO-8 &A user shall be informed when their WO has been processed & & & \\
+FR-CWO-8 &The WOMS shall be able to set a WO as either accepted or denied. & & & \\
 \hline
-FR-CWO-9 &The NIS shall be informed when there are WO to process & & & \\
+FR-CWO-9 &A user shall be able to set a WO as either accepted or denied. &A user is either a MO, M/E or CC user & & \\
 \hline
-FR-CWO-10&The ERP shall be informed when there are WO to process & & & \\
+FR-CWO-10& & & & \\
 \hline
-FR-CWO-11&The ERP shall be able to set a WO as active or denied & & & \\
+FR-CWO-11& & & & \\
 \end{longtable}
 \end{center}
+
+\subsection{Dispatching maintenance/ repair work}
+\label{sub:dispatching_maintenance}
+
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:dispatching_maintenance}\\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\hline
+FR-DM-1	& A user shall be able to view all WOs& & & \\ 
+\hline
+FR-DM-2	&A user shall be able to sort WOs  on status &Status can either be accepted, active, denied or completed. A user is either a MO or  M/E. & &3.3.1 \\ 
+\hline
+FR-DM-3	&A user shall be able to sort WOs  on priority &A user is either a MO or  M/E. & & 3.3.1\\ 
+\hline
+FR-DM-4	&A user shall be able to view the field technician's competence required to execute a WO. & & & \\ 
+\hline
+FR-DM-5	&A user shall able to see which spare parts are needed for the work order. & & & \\ 
+\hline
+FR-DM-6	&A user shall be able to view the location of a work order. & & & \\ 
+\hline
+FR-DM-7	&A user shall be able to view all available FTs in real time. & & & \\ 
+\hline
+FR-DM-8	&A user shall be able to view an available FT’s competency. & & & 3.3.7\\ 
+\hline
+FR-DM-9	&A user shall be able to view an available FT’s current geographic location. & & & 3.3.7 \\ 
+\hline
+FR-DM-10&A user shall be able to send a WO request to a FT. & & & \\ 
+\hline
+FR-DM-11&A FT shall be able to respond Yes or No to a WO request. & & & \\ 
+\hline
+FR-DM-12&A user shall to see the FT’s response for a WO request. & & & \\ 
+\hline
+FR-DM-13&A user shall be able to dispatch a WO to a FT. & & & \\ 
+\hline
+
+\end{longtable}
+\end{center}
+
+
+\subsection{Carry out maintenance/Repair work}
+\label{sub:carry_out_maintenance}
+
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:carry_out_maintenance}\\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+
+FR-COM-1 &A FT shall be able to view a WO, stored in the WOMS. & & & \\ 
+\hline
+FR-COM-2 &A FT shall be able to change the status of a WO. & & & \\ 
+\hline
+FR-COM-3 &A FT shall be able to access system equipment information related to the current WO. & & & \\ 
+\hline
+FR-COM-4 &A FT shall be able to change the status of a WO. & & & \\ 
+\hline
+FR-COM-5 &A FT shall be able to set the estimated remaining time on a WO. & & & \\ 
+\hline
+FR-COM-6 &A FT shall be able to set the time spent on a WO. & & & \\ 
+\hline
+FR-COM-7 &A FT shall be able to store what spare parts were used to execute a WO. & & & \\ 
+\hline
+FR-COM-8 &The WOMS shall be able to store a cost report connected to a WO. &A cost report contains: Material costs and time costs. & & ERI-HI-1 \\ 
+\hline
+FR-COM-9 &The WOMS shall be able to enter a cost report into the ERP. &A cost report contains: Material costs and time costs. & &ERI-HI-1 \\ 
+\hline
+
+\end{longtable}
+\end{center}
+
+
+\subsection{Inform about outages and their status}
+\label{sub:inform_about_outages}
+
+\begin{center}
+\begin{longtable}{|l|p{2cm}|p{2cm}|l|l|l|}
+\caption{HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA}
+\label{table:inform_about_outages}\\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endfirsthead
+
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Priority} & \textbf{Dependencies} \\
+\hline
+\endhead
+
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+FR-IAO-1 & & & & \\ 
+\hline
+FR-IAO-2 & & & & \\ 
+\hline
+FR-IAO-3 & & & & \\ 
+\hline
+FR-IAO-4 & & & & \\ 
+\hline
+
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
 
