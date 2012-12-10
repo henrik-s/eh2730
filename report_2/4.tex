@@ -25,7 +25,7 @@ All of the requirements in this section will be prioritized according to the Mos
 \textbf{Software interfaces} focuses on the connection the new WOMS will have with other system in the IT environment. Even though figure \ref{fig:external_interfaces} states that the WOMS will act like any other server in the network, the integration between WOMS and the current systems are far greater than the integration between the current systems.  In table \ref{table:software_interfaces} the software interfaces requirements that are needed are listed. \textbf{RBP}, in the tables, stands for Related Business Process.
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{3cm}|p{2cm}|l|l|}
+\begin{longtable}{|c|p{4cm}|p{3cm}|p{2cm}|c|c|}
 \caption{Software interface requirements}
 \label{table:software_interfaces}\\
 \hline
@@ -48,17 +48,17 @@ All of the requirements in this section will be prioritized according to the Mos
 
 \hline
 
-ERI-SI-1& The WOMS shall access the ERP to read any data & & \ref{sec:bp2}, \ref{sec:bp4}&  &\\
+ERI-SI-1& The WOMS shall access the ERP to read any data & & \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
-ERI-SI-2& The WOMS shall access the ERP to update any data & & \ref{sec:bp2}, \ref{sec:bp4}& & \\
+ERI-SI-2& The WOMS shall access the ERP to update any data & & \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
-ERI-SI-3& The WOMS shall access the ERP to delete any data & & \ref{sec:bp2}, \ref{sec:bp4}& & \\
+ERI-SI-3& The WOMS shall access the ERP to delete any data & & \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
-ERI-SI-4& The WOMS shall access the NIS to read any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}&  &\\
+ERI-SI-4& The WOMS shall access the NIS to read any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
-ERI-SI-5& The WOMS shall access the NIS  to modify any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}&  &\\
+ERI-SI-5& The WOMS shall access the NIS  to modify any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
-ERI-SI-6& The WOMS shall access the NIS  to delete any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}&  &\\
+ERI-SI-6& The WOMS shall access the NIS  to delete any data & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}& & - \\
 \hline
 
 \end{longtable}
@@ -70,7 +70,7 @@ ERI-SI-6& The WOMS shall access the NIS  to delete any data & & \ref{sec:bp1}, \
 The current interaction of the systems are based on Ethernet connections, this will therefore be the main way the system connects with other systems in the network. Listed in table \ref{table:communication_interfaces} are all the requirements on the communication interfaces.
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{3cm}|p{2cm}|l|l|}
+\begin{longtable}{|c|p{4cm}|p{3cm}|p{2cm}|c|c|}
 \caption{Communication interface requirements}
 \label{table:communication_interfaces}\\
 \hline
@@ -91,9 +91,9 @@ The current interaction of the systems are based on Ethernet connections, this w
 \hline
 \endlastfoot
 
-ERI-CI-1& All communication on the LAN, with the WOMS, shall be on Ethernet. & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6}& Must & \\
+ERI-CI-1& All communication on the LAN, with the WOMS, shall be on Ethernet. & & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6}& Must & - \\
 \hline
-ERI-CI-2& The WOMS's only access way to units outside the ACME LAN is through the firewall, via Ethernet. & Units will be, but are not limited to, PDAs. This requirement is derived from DIC-2& \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}& Must & \\
+ERI-CI-2& The WOMS's only access way to units outside the ACME LAN is through the firewall, via Ethernet. & Units will be, but are not limited to, PDAs. This requirement is derived from DIC-2& \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}& Must & - \\
 \hline
 
 \end{longtable}
@@ -106,7 +106,7 @@ ERI-CI-2& The WOMS's only access way to units outside the ACME LAN is through th
 A \textbf{Hardware interfaces} requirement is a requirement specifying what kind of other hardware that will communicate with the WOMS. The WOMS will need to be accessible from both internal workstations, as well as external PDAs, see figure \ref{fig:external_interfaces}. To achieve this there are some hardware interfaces requirements that needs to be fulfilled. These are presented in table \ref{table:hardware_interface}.
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{3cm}|p{2cm}|l|l|}
+\begin{longtable}{|c|p{4cm}|p{3cm}|p{2cm}|c|c|}
 \caption{Hardware interface requirements}
 \label{table:hardware_interface}\\
 \hline
@@ -127,9 +127,9 @@ A \textbf{Hardware interfaces} requirement is a requirement specifying what kind
 \hline
 \endlastfoot
 
-ERI-HI-1& The WOMS shall exchange data with the all servers on the LAN. & Servers are, the NIS \& CIS server, the DMS server and the ERP server. & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}, \ref{sec:bp5}& Must & \\
+ERI-HI-1& The WOMS shall exchange data with the all servers on the LAN. & Servers are, the NIS \& CIS server, the DMS server and the ERP server. & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp4}, \ref{sec:bp5}& Must & - \\
 \hline
-ERI-CI-2& The WOMS shall be accessible from the Field Personal PDAs. & &\ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5} & Must & \\
+ERI-CI-2& The WOMS shall be accessible from the Field Personal PDAs. & &\ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5} & Must & - \\
 \hline
 
 \end{longtable}
