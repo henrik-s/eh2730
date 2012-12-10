@@ -9,7 +9,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Software interfaces requirements}
 \label{table:software_interfaces}\\
 \hline
@@ -31,28 +31,24 @@ In this section all the functional requirements connected to the business proces
 \endlastfoot
 
 \hline
-
 FR-PMW-1 &A M/E user shall access every work orders that have been performed on a specified system equipment. & & Must & -\\
 \hline
-FR-PMW-2 &A M/E user shall access the time  past since the maintenance/repair/construction work has been performed on a specified system equipment.  & & Must & \\
+FR-PMW-2 &A M/E user shall access the time  past since the maintenance/repair/construction work has been performed on a specified system equipment.  & & Must & - \\
 \hline
-FR-PMW-3 &A M/E user shall access the age on a specified system equipment. & & Must & \\
+FR-PMW-3 &A M/E user shall access the age on a specified system equipment. & & Must & - \\
 \hline
-FR-PMW-4 &A M/E user shall be able to see a WO's total execution time.  & & Must & \\
+FR-PMW-4 &A M/E user shall be able to see a WO's total execution time.  & & Must & - \\
 \hline
-FR-PMW-5 &A M/E user shall be able to see which spare parts were used to complete a WO. & & Must & \\
+FR-PMW-5 &A M/E user shall be able to see which spare parts were used to complete a WO. & & Must & - \\
 \hline
-FR-PMW-6 &A M/E user shall be able to view what sub-contractor executed a WO. & & Should & \\
+FR-PMW-6 &A M/E user shall be able to view what sub-contractor executed a WO. & & Should & - \\
 \hline
-FR-PMW-7 &A M/E user shall be able to view the difference between estimated execution time and actual execution time on a WO. & & Should & \\
+FR-PMW-7 &A M/E user shall be able to view the difference between estimated execution time and actual execution time on a WO. & & Should & - \\
 \hline
-FR-PMW-8 & & & & \\
+FR-PMW-8 &A M/E user shall be able to view similar WO to a selected WO based on location & & Should & - \\
 \hline
-FR-PMW-9 & & & & \\
+FR-PMW-9 &A M/E user shall be able to view similar WO to a selected WO based on type of error & & Should & - \\
 \hline
-FR-PMW-10& & & & \\
-\hline
-FR-PMW-11& & & & \\
 
 \end{longtable}
 \end{center}
@@ -64,7 +60,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Creating a work order requirements}
 \label{table:creating_a_work_order}\\
 \hline
@@ -87,7 +83,7 @@ In this section all the functional requirements connected to the business proces
 
 \hline
 
-FR-CWO-1 & A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & Must & \\
+FR-CWO-1 & A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & Must & - \\
 \hline
 FR-CWO-2 & A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& Must & FR-CWO-1\\
 \hline
@@ -95,21 +91,19 @@ FR-CWO-3 & A user shall be able to edit a WO.  & A user is either a MO, M/E or C
 \hline
 FR-CWO-4 & A user shall be able to remove a WO. & A user is either a MO, M/E or CC user & Must & FR-CWO-1 \\
 \hline
-FR-CWO-5 & The WOMS shall be able gather system equipment manuals from the NIS. & & Must & \\
+FR-CWO-5 & The WOMS shall be able gather system equipment manuals from the NIS. & & Must & - \\
 \hline
 FR-CWO-6 & The WOMS shall be able to link system equipment manuals to WOs. & & Must & FR-CWO-5 \\
 \hline
-FR-CWO-7 & The WOMS shall be able to order a new service in the ERP system. & & Must & \\
+FR-CWO-7 & The WOMS shall be able to order a new service in the ERP system. & & Must & - \\
 \hline
-FR-CWO-8 & The WOMS shall be able to read a service order response from the ERP system. & & Must & \\
+FR-CWO-8 & The WOMS shall be able to read a service order response from the ERP system. & & Must & - \\
 \hline
-FR-CWO-9 & The WOMS shall be able to set a WO as either accepted or denied. & & Must & \\
+FR-CWO-9 & The WOMS shall be able to set a WO as either accepted or denied. & & Must & - \\
 \hline
-FR-CWO-10& A user shall be able to set a WO as either accepted or denied. &A user is either a MO, M/E or CC user & Must & \\
+FR-CWO-10& A user shall be able to set a WO as either accepted or denied. &A user is either a MO, M/E or CC user & Must & - \\
 \hline
-FR-CWO-11& & & & \\
-\hline
-FR-CWO-12& & & & \\
+
 \end{longtable}
 \end{center}
 
@@ -119,7 +113,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Dispatching maintenance/ repair work requirements}
 \label{table:dispatching_maintenance}\\
 \hline
@@ -141,33 +135,33 @@ In this section all the functional requirements connected to the business proces
 \endlastfoot
 
 \hline
-FR-DM-1	& A user shall be able to view all WOs& & Must & \\ 
+FR-DM-1	& A user shall be able to view all WOs& & Must & - \\ 
 \hline
 FR-DM-2	&A user shall be able to sort WOs  on status &Status can either be accepted, active, denied or completed. A user is either a MO or  M/E. & Must & FR-DM-1 \\ 
 \hline
 FR-DM-3	&A user shall be able to sort WOs  on priority &A user is either a MO or  M/E. & Must & FR-DM-1\\ 
 \hline
-FR-DM-4	&A user shall be able to view the field technician's competence required to execute a WO. & & Must & \\ 
+FR-DM-4	&A user shall be able to view the field technician's competence required to execute a WO. & & Must & - \\ 
 \hline
-FR-DM-5	&A user shall able to see which spare parts are needed for the work order. & & Must & \\ 
+FR-DM-5	&A user shall able to see which spare parts are needed for the work order. & & Must & - \\ 
 \hline
-FR-DM-6	&A user shall be able to view the location of a work order. & & Must & \\ 
+FR-DM-6	&A user shall be able to view the location of a work order. & & Must & - \\ 
 \hline
-FR-DM-7	&A user shall be able to view all available FTs on duty in real time. & & Must & \\ 
+FR-DM-7	&A user shall be able to view all available FTs on duty in real time. & & Must & - \\ 
 \hline
 FR-DM-8	&A user shall be able to view an available FT's competency. & & Must & FR-DM-7\\ 
 \hline
 FR-DM-9	&A user shall be able to view an available FT's current geographic location. & & Must & FR-DM-7 \\ 
 \hline
-FR-DM-10&The WOMS shall be able to select the most appropriate FT for a WO. & Most appropriate based on location, competence and work load & Must & \\
+FR-DM-10&The WOMS shall be able to select the most appropriate FT for a WO. & Most appropriate based on location, competence and work load & Must & - \\
 \hline
-FR-DM-11&A user shall be able to send a WO request to a FT. & & Must & \\  
+FR-DM-11&A user shall be able to send a WO request to a FT. & & Must & - \\  
 \hline
-FR-DM-12&A FT shall be able to respond Yes or No to a WO request. & & Must & \\ 
+FR-DM-12&A FT shall be able to respond Yes or No to a WO request. & & Must & - \\ 
 \hline
-FR-DM-13&A user shall to see the FT's response for a WO request. & & Must & \\ 
+FR-DM-13&A user shall to see the FT's response for a WO request. & & Must & - \\ 
 \hline
-FR-DM-14&A user shall be able to dispatch a WO to a FT. & & Must & \\ 
+FR-DM-14&A user shall be able to dispatch a WO to a FT. & & Must & - \\ 
 \hline
 
 \end{longtable}
@@ -181,7 +175,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Carry out maintenance/repair work requirements}
 \label{table:carry_out_maintenance}\\
 \hline
@@ -203,30 +197,25 @@ In this section all the functional requirements connected to the business proces
 \endlastfoot
 
 
-FR-COM-1 & A FT shall be able to view a WO, stored in the WOMS. & & Must & \\ 
+FR-COM-1 & A FT shall be able to view a WO, stored in the WOMS. & & Must & - \\ 
 \hline
-FR-COM-2 & A FT shall be able to change the status of a WO. & & Must & \\ 
+FR-COM-2 & A FT shall be able to change the status of a WO. & & Must & - \\ 
 \hline
-FR-COM-3 & A FT shall be able to access system equipment information related to the current WO. & & Must & \\ 
+FR-COM-3 & A FT shall be able to access system equipment information related to the current WO. & & Must & - \\ 
 \hline
-FR-COM-4 & A FT shall be able to change the status of a WO. & & Must & \\ 
+FR-COM-4 & A FT shall be able to change the status of a WO. & & Must & - \\ 
 \hline
-FR-COM-5 & A FT shall be able to set the estimated remaining time on a WO. & & Must & \\ 
+FR-COM-5 & A FT shall be able to set the estimated remaining time on a WO. & & Must & - \\ 
 \hline
-FR-COM-6 & A FT shall be able to set the time spent on a WO. & & Must & \\ 
+FR-COM-6 & A FT shall be able to set the time spent on a WO. & & Must & - \\ 
 \hline
-FR-COM-7 & A FT shall be able to store what spare parts were used to execute a WO. & & Must & \\ 
+FR-COM-7 & A FT shall be able to store what spare parts were used to execute a WO. & & Must & - \\ 
 \hline
 FR-COM-8 & The WOMS shall be able to store a cost report connected to a WO. &A cost report contains: Material costs and time costs. & Must & ERI-HI-1 \\ 
 \hline
 FR-COM-9 & The WOMS shall be able to enter a cost report into the ERP. &A cost report contains: Material costs and time costs. & Must & ERI-HI-1 \\ 
 \hline
-FR-COM-10& & & & \\
-\hline
-FR-COM-11& & & & \\
-\hline
-FR-COM-12& & & & \\
-\hline
+
 \end{longtable}
 \end{center}
 
@@ -237,7 +226,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Inform about outages and their status}
 \label{table:inform_about_outages}\\
 \hline
@@ -258,26 +247,23 @@ In this section all the functional requirements connected to the business proces
 \hline
 \endlastfoot
 
-FR-IAO-1 & A user shall be able to view the status of a WO. & A user is either a M/E or MO & Must & \\ 
+FR-IAO-1 & A user shall be able to view the status of a WO. & A user is either a M/E or MO & Must & - \\ 
 \hline
-FR-IAO-2 & A user shall be able to view the estimated time to completion on a WO. &  A user is either a M/E or MO & Must & \\
+FR-IAO-2 & A user shall be able to view the estimated time to completion on a WO. &  A user is either a M/E or MO & Must & - \\
 \hline
-FR-IAO-3 & The WOMS shall be able to insert outage statuses in the CIS. & & Must & \\ 
+FR-IAO-3 & The WOMS shall be able to insert outage statuses in the CIS. & & Must & - \\ 
 \hline
-FR-IAO-4 & The WOMS shall be able to update outage statuses in the CIS. & & Must & \\ 
+FR-IAO-4 & The WOMS shall be able to update outage statuses in the CIS. & & Must & - \\ 
 \hline
-FR-IAO-5 & The WOMS shall be able to remove outages statuses in the CIS. & & Must & \\
+FR-IAO-5 & The WOMS shall be able to remove outages statuses in the CIS. & & Must & - \\
 \hline 
-FR-IAO-6 & A FT shall be able to insert outage statuses & & Should & \\
+FR-IAO-6 & A FT shall be able to insert outage statuses & & Should & - \\
 \hline
-FR-IAO-7 & A FT shall be able to update outage statuses & & Should & \\
+FR-IAO-7 & A FT shall be able to update outage statuses & & Should & - \\
 \hline
-FR-IAO-8 & A FT shall be able to remove outage statuses & & Should & \\
+FR-IAO-8 & A FT shall be able to remove outage statuses & & Should & - \\
 \hline
-FR-IAO-9 & & & & \\
-\hline
-FR-IAO-10& & & & \\
-\hline
+
 
 \end{longtable}
 \end{center}
@@ -289,7 +275,7 @@ In this section all the functional requirements connected to the business proces
 
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|c|p{4cm}|p{4cm}|c|c|}
 \caption{Analyze cost and repair data}
 \label{table:analyze_cost}\\
 \hline
@@ -310,30 +296,23 @@ In this section all the functional requirements connected to the business proces
 \hline
 \endlastfoot
 
-FR-AC-1 &An ACC user shall be able to view what sub-contractor executed a WO. & & Must & \\
+FR-AC-1 &An ACC user shall be able to view what sub-contractor executed a WO. & & Must & - \\
 \hline
-FR-AC-2 &An ACC user shall be able to view mean execution time for a WO  for each sub-contractor & & Must & \\
+FR-AC-2 &An ACC user shall be able to view mean execution time for a WO  for each sub-contractor & & Must & - \\
 \hline
-FR-AC-3 &An ACC user shall be able to view what specific FT executed a WO & & Should & \\
+FR-AC-3 &An ACC user shall be able to view what specific FT executed a WO & & Should & - \\
 \hline
-FR-AC-4 &An ACC user shall be able to view a cost report connected to a WO. & & Must & \\
+FR-AC-4 &An ACC user shall be able to view a cost report connected to a WO. & & Must & - \\
 \hline
-FR-AC-5 &An ACC user shall be able to view the difference between estimated time and actual executed time. & & Should & \\
+FR-AC-5 &An ACC user shall be able to view the difference between estimated time and actual executed time. & & Should & - \\
 \hline
-FR-AC-6 &An ACC user shall be able to view actual execution time on a WO & & Must & \\
+FR-AC-6 &An ACC user shall be able to view the actual execution time for a WO & & Must & - \\
 \hline
-FR-AC-7 &An ACC user shall be able to view a similar WO to a selected WO based on location & & Should & \\
+FR-AC-7 &An ACC user shall be able to view a similar WO to a selected WO based on location & & Should & - \\
 \hline
-FR-AC-8 &An ACC user shall be able to view a similar WO to a selected WO based on type of error & & Should & \\
+FR-AC-8 &An ACC user shall be able to view a similar WO to a selected WO based on type of error & & Should & - \\
 \hline
-FR-AC-9& & & Should & \\
-\hline
-FR-AC-10& & & Should & \\
-\hline
-FR-AC-11& & & Should & \\
-\hline
-FR-AC-12& & & Should & \\
-\hline
+
 \end{longtable}
 \end{center}
 
