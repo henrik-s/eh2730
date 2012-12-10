@@ -4,13 +4,52 @@ This section is intended to provide an overall description of the WOMS product, 
 \subsection{Product Overview}
 The project in hand will be a WOMS, Work Order Management System.  The purpose of this system will be to handle work orders, for maintenance, repair and construction procedures. The system will dispatch work orders to the appropriate field technician, depending on the technicians location and competence. The system will also have capability to prioritize  work orders  making the currently  most important work executed first. WOMS will also support the field technicians in their work process as they may through a WO access information related to maintenance work, such as manuals and system equipment specifications. 
 
-The above mentioned functionality concerns the pre- and the main phase of maintenance work (create, dispatch, and execute WOs). The scope of WOMS is also extended to the aftermath and post-phase of maintenance work, for example follow-up work and analysis of the function. The WOMS gather information such as time and material consumed on WOs. It will also interact with the finance function of ACME, to automatically enter cost reports and other expenditures. 
+The above mentioned functionality concerns the pre- and the main phase of maintenance work (create, dispatch, and execute WOs). The scope of WOMS is also extended to the aftermath and post-phase of maintenance work, for example follow-up work and analysis. The WOMS gather information such as time and material consumed on WOs, information which is the output from FTs. It will also interact with the finance function of ACME, to automatically enter cost reports and other expenditures. 
 
-If we shift the focus to another division of ACME; as mentioned in section \ref{sec:introduction}, the customer care function is one major cost - fortunately WOMS offers improved utilities to CC. The system 
+Let us shift the focus to another division of ACME; as mentioned in section \ref{sec:introduction}, the customer care function is one major cost - fortunately WOMS offers improved utilities to CC. The system will act as real-time status provider over maintenance/repair/construction work, in other words: providing always up-to-date outage information. 
 
 \subsection{Product Stakeholders and Users}
 \label{sec:produt_stakeholders_and_users}
-The product stakeholders have been identified and described in a Stakeholder Profile and a Stakeholder Categorization, see Appendix A to view the models. Furthermore, an Actor Table describing the users, their roles and responsibilities in the system context, can be found in table \ref{fig:actor_table}. As one can see, the table shows the different roles direct users (internal and external stakeholders) enact when interacting with the system, and also what actor roles current systems will have. 
+The product stakeholders have been identified and categorized in a Stakeholder Categorization, see appendix \ref{appendix_b_stakeholder_categorization} to view the model. Furthermore, an Actor Table describing the users, their roles and responsibilities in the system context, can be found in table \ref{table:actor_table}. As one can see, the table shows the different roles direct users (internal and external stakeholders) enact when interacting with the system, and also what actor roles current systems will have.
+\begin{center}
+	\begin{longtable}{|l|p{7cm}|p{3cm}|}
+		\caption{Actor table}
+		\label{table:actor_table}\\
+		\hline
+		\textbf{Actor} & \textbf{Attributes and Responsibilites} & \textbf{Job Title(s)}\\
+		\hline
+		\endfirsthead
+
+		\multicolumn{3}{c}%
+		{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+		\hline
+		\textbf{Actor} & \textbf{Attributes and Responsibilites} & \textbf{Job Title(s)}\\
+		\hline
+		\endhead
+
+		\hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+		\endfoot
+		\hline
+		\endlastfoot
+		\hline
+		Equipment informer& Supply WOMS with system and equipment information, e.g. manuals, parts & NIS \\
+		\hline		
+		Work Order Creator&Responsible for creating work orders WOMS shall handle &M/E, MO, CC  \\
+		\hline
+		Service controller&Interact with the system to get status information for a maintenance/repair service. This will tell the status for an outage 
+		&M/E, MO, CC, CIS \\
+		\hline
+		The ''Wallet''&When WOMS order a service, it is this actor's responsibility to approve or deny the requested service. Must also receive and store incoming cost reports &ERP (PU) \\
+		\hline
+		Maintenance executor&Responsible for executing the dispatched work orders from WOMS. Update the status for a work order and report time and material used when a job is done &FT \\
+		\hline
+		Dispatcher&To select the most appropriate field technician to be assigned a work order and consequently dispatch it  & M/E, MO\\
+		\hline
+		Analyzer&Analyze cost and repair time data retrieved from WOMS to improve cost and work processes &ACC \\
+		\hline
+	\end{longtable}
+\end{center}
+
 \subsection{Product Environment}
 \label{sec:product_environment}
 
