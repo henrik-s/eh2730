@@ -5,22 +5,22 @@ This section will handle all of the \textbf{Quality attributes}, also called non
 Below, the \textbf{Quality attributes} for the WOMS system are listed. The requirements are categorized into security, safety, reliability and availability. The ID for the quality attributes are QA-\{number\}, where QA stands for quality attributes.
 
 \begin{center}
-\begin{longtable}{|l|p{4cm}|p{4cm}|l|l|l|}
+\begin{longtable}{|l|p{4cm}|p{2cm}|l|p{1.5cm}|l|l|}
 \caption{Quality attributes}
 \label{table:5_requirements}\\
 \hline
-\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{Priority} & \textbf{Dependencies}\\
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{RBP}&\textbf{Priority} & \textbf{Dependencies}\\
 \hline
 \endfirsthead
 
-\multicolumn{6}{c}%
+\multicolumn{7}{c}%
 {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
 \hline
-\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{Priority} & \textbf{Dependencies} \\
+\textbf{ID}& \textbf{Description} & \textbf{Comment} & \textbf{Category} & \textbf{RBP}&\textbf{Priority} & \textbf{Dependencies}\\
 \hline
 \endhead
 
-\hline \multicolumn{6}{r}{\textit{Continued on next page}} \\
+\hline \multicolumn{7}{r}{\textit{Continued on next page}} \\
 \endfoot
 
 \hline
@@ -28,21 +28,21 @@ Below, the \textbf{Quality attributes} for the WOMS system are listed. The requi
 
 \hline
 
-QA-1	& The WOMS shall have at least $95\%$ rate of picking the most appropriate field technician & Validated through testing &	Reliability & Must & FR-DM-10\\
+QA-1	& The WOMS shall have at least $95\%$ rate of picking the most appropriate field technician & Validated through testing &	Reliability & \ref{sec:bp3}&Must & FR-DM-10\\
 \hline
-QA-2	& The WOMS always dispatch the highest prioritized WO first to field technicians. & Validated through testing & Reliability & Must & \\
+QA-2	& The WOMS shall always dispatch the highest prioritized WO first to field technicians. & Validated through testing & Reliability &\ref{sec:bp3} & Must & \\
 \hline
-QA-3	& The WOMS shall have an overall uptime of at least $99\%$ each month. & Validated through testing & Availability & Must & \\
+QA-3	& The WOMS shall have an overall uptime of at least $99\%$ each month. & Validated through testing & Availability &\ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6} & Must & \\
 \hline
-QA-4	& The WOMS shall SQL-parse all input data so harmful inputs will not affect the database & Validated through testing , SQL-parsing means removing all illegal syntax from the text. & Safety & Must & \\
+QA-4	& The WOMS shall SQL-parse all input data so harmful inputs will not affect the database & Validated through testing , SQL-parsing means removing all illegal syntax from the text. & Safety &\ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6} & Must & \\
 \hline
-QA-5	& The WOMS shall only allow 3 authorization attempts from each IP before the IP address is blocked for 15 minutes. & Validated through testing & Security & Must & \\
+QA-5	& The WOMS shall only allow 3 authorization attempts from each IP before the IP address is blocked for 15 minutes. & Validated through testing & Security &\ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6} &Must & \\
 \hline
-QA-6	& The WOMS shall auto logout a user if inactive, no input, for 15 minutes. & Validated through testing & Security & Must & \\
+QA-6	& The WOMS shall automatically logout a user if inactive, no input, for 15 minutes. & Validated through testing & Security &\ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6} & Must & \\
 \hline
-QA-7	& The WOMS shall have customizable security settings for each user. & Validated through testing. Settings regarding, if allowed to edit, allowed to read or allowed to delete WOs. & Security & Must & \\
+QA-7	& The WOMS shall have customizable security settings for each user. & Validated through testing. Settings regarding, if allowed to edit, allowed to read or allowed to delete WOs. & Security & \ref{sec:bp1}, \ref{sec:bp2}, \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}, \ref{sec:bp6}&Must & \\
 \hline
-QA-8	& Connections from outside of the ACME LAN to the WOMS shall be encrypted with TLS 1.2 & Validated through testing. & Security & Must & \\
+QA-8	& Connections from outside of the ACME LAN to the WOMS shall be encrypted with TLS 1.2 & Validated through testing. & Security & \ref{sec:bp3}, \ref{sec:bp4}, \ref{sec:bp5}&Must & \\
 
 \end{longtable}
 \end{center}
