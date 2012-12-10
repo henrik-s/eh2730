@@ -1,10 +1,11 @@
 \section{Introduction}
 \label{sec:introduction}
+This document is a Work Order Management System requirement specification intended for a procurement project of the ACME company. This section describes the project's purpose and background, including the business goals. A \emph{Document Overview} and a \emph{Glossary} can be also be found under this topic.
 \subsection{Purpose and background}
 \label{purpose_and_background}
-This document is a project plan for the procurement project of "The ACME WOMS project". The "The ACME WOMS project" project will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
+This document is a project plan for the procurement project of "The ACME WOMS project". "The ACME WOMS project" will, if executed, implement a new digital system in the current ACME system collection. This system will be a Work Order Management System (WOMS) targeted to optimize proactive/reactive maintenance and the customer support process, in terms of costs and efficiency.
 
-The background for this procurement project is that the company, ACME, has an outstanding economic issue, which has been a problem the company for a long time. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12, increasing the pressure to an already strained budget. The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present.\cite{A}
+The background for this procurement project is that the company, ACME, has an outstanding economic issue, which has been a problem the company for a long time \cite{A}. The company has located a low profitability, which they think is an indicator that there may be sub-optimal solutions within the company. ACME has also analyzed the costs of the company and located that one of the biggest cost expenses are the customer support team. Furthermore, recently a new legislation was taken in action enacting a penalty fee for outages longer than 12, increasing the pressure to an already strained budget. The management department believes that cost reductions can be made in the maintenance and repair section if a better control system would be present.
 
 \subsubsection{Vision Statement}
 \label{vision_statement}
@@ -13,9 +14,9 @@ For ACME who deliver electrical power to factories and households, where the mai
 Unlike existing work procedures that do not offer the ability to control neither how to dispatch work orders nor to follow up and reduce costs related to maintenance work, the WOMS product will fulfill not only how to control and optimize the maintenance function, but also enable ACME's customer support to provide better and more up-to-date information to customers. 
 
 \subsection{Goals}
-The main costs of ACME's business are maintenance, repair and construction and the survey (section \ref{purpose_and_background}) indicates those costs to be beyond industry average. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME Company. Within the same scope, another goal is to tackle the "12 hour outage penalty" issue by cutting the costs for this post in half.
+The main costs of ACME's business are maintenance, repair and construction and the survey indicates those costs to be beyond industry average \cite{A}. The major goal of this project is to resolve this issue, lower the costs to industry average, increasing the competitive value of the ACME Company. Within the same scope, another goal is to tackle the "12 hour outage penalty" issue by cutting the costs for this post in half.
 
-Another major cost can be found in the customer care division. A WOMS can support this process, providing function and service to improvement and optimization \cite{B}. Therefore, two goals will be lowering: the number of incoming "customer complaining cases", and the average spent time for a customer care employee on an average case.
+Another major cost can be found in the customer care division. A WOMS \cite{B} can support this process, providing function and service to improvement and optimization. A concrete example: it will set the preconditions needed to automate this process, e.g. having an ''computerized'' customer care function providing customer with outage information. The overall intention and goals for the customer care division, in this project, is to decrease the costs for the customer care team division.
 
 All the goals is summarized in the table \ref{table:goals}. The goals will be compared to economic report for the time period January 1st 2012 to December 31st 2012.
 \begin{center}
@@ -41,7 +42,7 @@ All the goals is summarized in the table \ref{table:goals}. The goals will be co
 		\endlastfoot
 		%
 		GOAL-1 \label{goal-1} & 
-		Reduce the expenses for the maintenance, repair, and construction post to < 100\% of industry average &
+		Reduce the expenses for the ''maintenance, repair, and construction'' post to < 100\% of industry average &
 		By the support of WOMS functionality, improve proactive and reactive maintenance processes &
 		May 1st 2016 \\
 		\hline
@@ -75,9 +76,9 @@ Section \ref{sec:overall_description} is a description for the product, its user
 
 Section \ref{sec:functional_requirements} goal is to list all the requirements connected to the processes in section \ref{sec:overall_description}. This section is mainly written for system developers and users since these requirements are the core in what the system, when developed, will do. 
 
-Section \ref{sec:external_interface_requirements} aims to deliver an explanation on how the system will interact with the current ACME IT-environment. What requirements the environments have on the WOMS. This text is suitable for the IS/IT department.
+Section \ref{sec:external_interface_requirements} aims to deliver an explanation on how the system will interact with the current ACME IT-environment. What requirements the environments have on the WOMS. This text is suitable for the IS/IT department and developers.
 
-Section \ref{sec:quality_attributes} is suitable for the IS/IT department. It describes all the non-functional requirements for the new system. 
+Section \ref{sec:quality_attributes} is suitable for the IS/IT department and developers. It describes all the non-functional requirements for the new system. 
 
 \subsection{Glossary}
 \begin{center}
@@ -117,6 +118,8 @@ Section \ref{sec:quality_attributes} is suitable for the IS/IT department. It de
 		\hline
 		MO 	& 	The stakeholder \emph{Monitoring Team} \\
 		\hline
+		MoSCoW 	&  A requirement prioritization method \cite{coleyconsulting} \\
+		\hline
 		NIS 	& 	Network Information System \\
 		\hline
 		PU 	& 	The stakeholder \emph{Purchasing Team} \\
@@ -125,7 +128,7 @@ Section \ref{sec:quality_attributes} is suitable for the IS/IT department. It de
 		\hline
 		WO 	& 	Work Order \\
 		\hline 
-		IP address	&	Internet Protocol address \\ 
+		IP	&	Internet Protocol  \\ 
 		\hline
 	\end{longtable}
 \end{center}

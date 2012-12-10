@@ -1,4 +1,4 @@
-\section{External interface requirements}
+\section{External Interface Requirements}
 \label{sec:external_interface_requirements}
 
 To be able to fulfill all of the requirements specified in section 3 some additional requirements for the WOMS has to be specified. These requirements are the \textbf{External interface requirements}, the requirements that specify how the WOMS will interact with other systems and users.  These requirements are separated into 3 different categories, depending on what they describe, \textbf{Software interface requirements}, \textbf{Communications interfaces requirements} and \textbf{Hardware interfaces requirements}. A more in detail description of each of the interfaces are described in their own subchapter, but the main focus can be seen as \textbf{Software interface requirements} is what information will be transmitted, \textbf{Communications interfaces requirements} is what type technical interface the communication will be on and \textbf{Hardware interfaces requirements} will be the hardware the WOMS comes in contact with. 
@@ -19,7 +19,7 @@ All of the requirements in this section will be prioritized according to the Mos
 
 \textbf{NOTE:} No requirements on needed changes for other parts of the IT-system are listed here, only requirements that directly affect that WOMS are specified. I.e. there are no requirements on that the PDA needs to be able to connect to the LAN, see fig. \ref{fig:external_interfaces}, only requirements on how the PDA interacts with the WOMS while it's on the LAN.
 
-\subsection{Software interfaces}
+\subsection{Software Interfaces}
 \label{sub:software_interfaces}
 
 \textbf{Software interfaces} focuses on the connection the new WOMS will have with other system in the IT environment. Even though figure \ref{fig:external_interfaces} states that the WOMS will act like any other server in the network, the integration between WOMS and the current systems are far greater than the integration between the current systems.  In table \ref{table:software_interfaces} the software interfaces requirements that are needed are listed.
@@ -64,7 +64,7 @@ ERI-SI-6& The WOMS shall access the NIS  to delete any data & & & \\
 \end{longtable}
 \end{center}
 
-\subsection{Communication interfaces}
+\subsection{Communication Interfaces}
 \label{sub:communication_interfaces}
 
 The current interaction of the systems are based on Ethernet connections, this will therefore be the main way the system connects with other systems in the network. Listed in table \ref{table:communication_interfaces} are all the requirements on the communication interfaces.
@@ -100,7 +100,7 @@ ERI-CI-2& The WOMS only access way to units outside the ACME LAN is through the 
 \end{center}
 
 
-\subsection{Hardware interfaces}
+\subsection{Hardware Interfaces}
 \label{sub:hardwar_interfaces}
 
 A \textbf{Hardware interfaces} requirement is a requirement specifying what kind of other hardware that will communicate with the WOMS. The WOMS will need to be accessible from both internal workstations, as well as external PDAs, see fig. \ref{fig:external_interfaces}. To achieve this there are some hardware interfaces requirements that needs to be fulfilled:
