@@ -89,15 +89,15 @@ In this section all the functional requirements connected to the business proces
 
 FR-CWO-1 & A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & Must & \\
 \hline
-FR-CWO-2 & A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& Must & 3.2.1\\
+FR-CWO-2 & A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& Must & FR-CWO-1\\
 \hline
-FR-CWO-3 & A user shall be able to edit a WO.  & A user is either a MO, M/E or CC user & Must & 3.2.1 \\
+FR-CWO-3 & A user shall be able to edit a WO.  & A user is either a MO, M/E or CC user & Must & FR-CWO-1 \\
 \hline
-FR-CWO-4 & A user shall be able to remove a WO. & A user is either a MO, M/E or CC user & Must & 3.2.1 \\
+FR-CWO-4 & A user shall be able to remove a WO. & A user is either a MO, M/E or CC user & Must & FR-CWO-1 \\
 \hline
 FR-CWO-5 & The WOMS shall be able gather system equipment manuals from the NIS. & & Must & \\
 \hline
-FR-CWO-6 & The WOMS shall be able to link system equipment manuals to WOs. & & Must & 3.2.3 \\
+FR-CWO-6 & The WOMS shall be able to link system equipment manuals to WOs. & & Must & FR-CWO-5 \\
 \hline
 FR-CWO-7 & The WOMS shall be able to order a new service in the ERP system. & & Must & \\
 \hline
@@ -143,9 +143,9 @@ In this section all the functional requirements connected to the business proces
 \hline
 FR-DM-1	& A user shall be able to view all WOs& & Must & \\ 
 \hline
-FR-DM-2	&A user shall be able to sort WOs  on status &Status can either be accepted, active, denied or completed. A user is either a MO or  M/E. & Must &3.3.1 \\ 
+FR-DM-2	&A user shall be able to sort WOs  on status &Status can either be accepted, active, denied or completed. A user is either a MO or  M/E. & Must & FR-DM-1 \\ 
 \hline
-FR-DM-3	&A user shall be able to sort WOs  on priority &A user is either a MO or  M/E. & Must & 3.3.1\\ 
+FR-DM-3	&A user shall be able to sort WOs  on priority &A user is either a MO or  M/E. & Must & FR-DM-1\\ 
 \hline
 FR-DM-4	&A user shall be able to view the field technician's competence required to execute a WO. & & Must & \\ 
 \hline
@@ -153,19 +153,21 @@ FR-DM-5	&A user shall able to see which spare parts are needed for the work orde
 \hline
 FR-DM-6	&A user shall be able to view the location of a work order. & & Must & \\ 
 \hline
-FR-DM-7	&A user shall be able to view all available FTs in real time. & & Must & \\ 
+FR-DM-7	&A user shall be able to view all available FTs on duty in real time. & & Must & \\ 
 \hline
-FR-DM-8	&A user shall be able to view an available FT's competency. & & Must & 3.3.7\\ 
+FR-DM-8	&A user shall be able to view an available FT's competency. & & Must & FR-DM-7\\ 
 \hline
-FR-DM-9	&A user shall be able to view an available FT's current geographic location. & & Must & 3.3.7 \\ 
+FR-DM-9	&A user shall be able to view an available FT's current geographic location. & & Must & FR-DM-7 \\ 
 \hline
-FR-DM-10&A user shall be able to send a WO request to a FT. & & Must & \\ 
+FR-DM-10&The WOMS shall be able to select the most appropriate FT for a WO. & Most appropriate based on location, competence and work load & Must & \\
 \hline
-FR-DM-11&A FT shall be able to respond Yes or No to a WO request. & & Must & \\ 
+FR-DM-11&A user shall be able to send a WO request to a FT. & & Must & \\  
 \hline
-FR-DM-12&A user shall to see the FT's response for a WO request. & & Must & \\ 
+FR-DM-12&A FT shall be able to respond Yes or No to a WO request. & & Must & \\ 
 \hline
-FR-DM-13&A user shall be able to dispatch a WO to a FT. & & Must & \\ 
+FR-DM-13&A user shall to see the FT's response for a WO request. & & Must & \\ 
+\hline
+FR-DM-14&A user shall be able to dispatch a WO to a FT. & & Must & \\ 
 \hline
 
 \end{longtable}
