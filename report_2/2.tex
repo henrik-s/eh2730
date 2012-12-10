@@ -75,7 +75,7 @@ The \textbf{Creating work orders} process focuses on the way ACME handles work o
 
 In this process there are three different main users, MO, M/E and CC. These users have in earlier processes decided that a maintenance/repair/construction work is needed and want to create a work order. This work order then gets automatically updated by the NIS to include all the relevant information about the components and other parts in the planned work order. The work order is then handled by the ERP as a new service where an automatic cost calculation is made. The PU will now read the calculations made by the ERP and they will have the final decision on whether or not to execute the work order, this is not done in the WOMS. The final decision is then delivered to the user specifying it in the first place. The whole process is modeled in figure \ref{fig:create}.
 
-The WOMS is the system where WOs are create and store. The system will also	 help in this process by being a center hub between all the different components in this process. To do this the WOMS needs to be able to transfer data between different systems and have working interfaces for all of these. All the different stakeholders needs to have the an interface that makes it possible for them to create and modify work orders, depending on their work title, which will be stored in the WOMS.
+The WOMS is the system where WOs are created and stored. The system will also help in this process by being a center hub between all the different components in this process. To do this the WOMS needs to be able to transfer data between different systems and have working interfaces for all of these. All the different stakeholders needs to have the an interface that makes it possible for them to create and modify work orders, depending on their work title, which will be stored in the WOMS.
 \begin{figure}[H]
 	\centering
 	\setlength\fboxsep{7pt}
@@ -87,11 +87,11 @@ The WOMS is the system where WOs are create and store. The system will also	 hel
 %
 \subsubsection{Dispatching Maintenance/Repair Work to Technicians}
 \label{sec:bp3}
-The \textbf{Dispatching maintenance/repair work to technicians} is triggered when there is a created and approved work order, a result from the business process \ref{sec:bp1}. To be able to dispatch work orders in a efficient way will contribute to GOALS-1 and GOALS-2, a reason to this is (for example): when a system or equipment is down (broken), the cost is not only the repair cost itself but also the longer an object is out, the higher the costs will be.
+The \textbf{Dispatching maintenance/repair work to technicians} is triggered when there is a created and approved work order, a result from the business process \ref{sec:bp1}. Dispatch work orders in a efficient way will contribute to GOALS-1 and GOALS-2, a reason to this is (for example): when a system or equipment is down (broken), the cost is not only the repair cost itself but also the longer an object is out, the higher the costs will be.
 
-This process begins with - a work order operator (may be M/E or MO) has work orders to dispatch. Information such as the work order's priority, the skills and material needed helps the operator in the process of assigning the work order to a FT. Profiles of field technicians is also available including information such as their geographic position and their competence. Before a work order may be dispatched, the operator sends a request to FT who subsequently responds with accept or deny. If it was accepted, a work order has been dispatched and this business process ends.
+This process begins with - a work order operator (may be M/E or MO) has work orders to dispatch. Information such as the work order's priority, the skills and material needed helps the operator in the process of assigning the work order to a FT. Profiles of field technicians is also available including information such as their geographic position and their competence. Before a work order may be dispatched, the operator sends a request to FT who subsequently responds with accept or deny. If it was accepted, a work order has been dispatched and this business process ends. The whole process is modeled in figure \fref{fig:dispatch}.
 
-WOMS is the underlying system, which enables this process to be executed as recently described. Work order operators works directly with WOMS, viewing WO's and FT's profiles and using the system to interact with FT's. WOMS support the FT's activities as it feeds them with request and work orders, and also receives their responds to requests.
+WOMS is the underlying system, which enables this process to be executed as recently described. Work order operators works directly with WOMS, viewing WO's and FT's profiles and using the system to interact with FT's. WOMS support the FT's activities as it feeds them with request and work orders, and also receives their responds to dispatched WO-requests.
 \begin{figure}[H]
 	\centering
 	\setlength\fboxsep{7pt}
@@ -105,7 +105,7 @@ WOMS is the underlying system, which enables this process to be executed as rece
 \label{sec:bp4}
 \textbf{Carry Out Maintenance/Repair Work} affects the business goals GOAL-1, GOAL-2, and GOAL-3. GOALS-1 and GOALS-2 is pretty straightforward connected to this process, as how ACME and FT's carries out and executes work orders directly affects maintenance/repair/construction costs. We will see that costs within the CC division also are \textbf{indirectly} affected.
 
-Figure \ref{fig:carry} shows the start of the process. A FT has been assigned and is about to carry out a WO, thereby FT changes the status of the WO to \emph{ACTIVE}. He or she may also obtain information related to the WO, e.g. manuals. Next step is that FT estimates the time to completion for the current WO and shall also, anytime, during the maintenance work update the estimated time. Having this value to be as correct as possible increases the value of the customer care function (where customer contacts to get answers and information of e.g. an outage) - the more accurate information they have access to, the more satisfied customers will be. At last, when a WO is completed, FT shall report time and material used for the recent work. This information is used in other processes, e.g. \ref{sec:bp1} and \ref{sec:bp6}, and is also subject to a cost report entered in ERP system.
+Figure \ref{fig:carry} shows the process. A FT has been assigned and is about to carry out a WO, thereby FT changes the status of the WO to \emph{ACTIVE}. He or she may also obtain information related to the WO, e.g. manuals. Next step is that FT estimates the time to completion for the current WO and shall also, anytime, during the maintenance work update the estimated time. Having this value to be as correct as possible increases the value of the customer care function (where customer contacts to get answers and information of e.g. an outage) - the more accurate information they have access to, the more satisfied customers will be. At last, when a WO is completed, FT shall report time and material used for the executed WO. This information is used in other processes, e.g. section \ref{sec:bp1} and section \ref{sec:bp6}, and is also subject to a cost report entered in ERP system. 
 
 WOMS will support this, first of all since it will be the system that enables the information flow within the process. FT's get the WO itself and its information from WOMS via their PDA. They also, via their PDA, send information to WOMS that stores the information (such as a WO's status, time-material reports). WOMS will also act as the "forwarder" of the cost report, sending it to ERP.
 \begin{figure}[H]
@@ -119,11 +119,11 @@ WOMS will support this, first of all since it will be the system that enables th
 %
 \subsubsection{Inform About Outages and Their Status}
 \label{sec:bp5}
-An important function in the ACME business is the relationship to their existing customers. Providing customer utility means not only deliver a good product, in this context $\rightarrow$ electrical power, but also nurtures the customer in terms of support. According to \emph{ACME Power Company - Appendix A} \cite{A}, \emph{''... the second largest share of calls concern outages.''}, hence the importance of this process, connected to GOALS-3 and GOALS-4, is of no doubt. 
+An important function in the ACME business is the relationship to their existing customers. Providing customer utility means not only deliver a good product, in this context $\rightarrow$ electrical power, but also to nurture the existing customers in terms of support - espacially during outages. According to \emph{ACME Power Company - Appendix A} \cite{A}, \emph{''... the second largest share of calls concern outages.''}, hence the importance of this process, connected to GOALS-3 and GOALS-4, is of no doubt. 
 
-Figure \ref{fig:inform} illustrates this process. Three stakeholders - M/E, MO, and FT - are providers of information concerning outages and their status. CC is the consumers of this information, and need to access it on customer demands. This data is located in the CIS.
+Figure \ref{fig:inform} illustrates this process. Three stakeholders - M/E, MO, and FT - are providers of information concerning outages and their status. CC is the consumers of this information, and need to access it on customer demands. This data is located in the CIS. 
 
-The WOMS will support this system, as it will function as a man-in-the-middle system, with its purpose to greatly increase the quality of the outage information stored in CIS. As of today, this information is rarely completely updated \cite{A}, a fact WOMS will extinguish. WOMS shall continuously update this information in CIS and as described in \ref{sec:bp4}, where FTs could update this information in real-time, the status of an outage will always be up to date. 
+The WOMS will support this system, as it will function as a man-in-the-middle system, with its purpose to greatly increase the quality of the outage information stored in CIS. As of today, this information is rarely completely updated \cite{A}, a fact WOMS will extinguish. WOMS shall continuously update this information in CIS and as an result of a function described in section \ref{sec:bp4}, where FTs could update this information in real-time, the status of an outage will always be up to date. 
 \begin{figure}[H]
 	\centering
 	\setlength\fboxsep{7pt}
@@ -137,7 +137,7 @@ The WOMS will support this system, as it will function as a man-in-the-middle sy
 \label{sec:bp6}
 The process of analyzing costs and repair data consequently is a precondition to be able to come up with new solutions and improvement for routines and procedures. These are causes leading to fulfill GOAL-1 and GOAL-2. 
 
-The stakeholder ACC begins gathering information concerning costs originating from maintenance/repair/\\construction work, e.g. differences in costs that different contractors (FTs) accounts for similar work orders/services.  Next step is to analyze the collected data, resulting in perhaps (to continue with the aforementioned example) valuable knowledge of which contractors that shall be hired in the future and which are not. 
+The stakeholder ACC begins gathering information concerning costs originating from maintenance/repair/\\construction work, e.g. differences in costs that different contractors (FTs) accounts for similar work orders/services.  Next step is to analyze the collected data, evenutally resulting in (to continue with the aforementioned example) valuable knowledge of which contractors that shall be hired in the future and which are not. The whole process is modeled in figure \ref{fig:analyze}.
 
 WOMS supports this process by, simple, offer several types of statistics related to work orders. Such data is gathered by the system as we saw in process \ref{sec:bp4}. Today, this functionality is not provided by any system within ACME.
 \begin{figure}[H]
@@ -149,17 +149,15 @@ WOMS supports this process by, simple, offer several types of statistics related
 	\caption{Analyze cost and repair data}
 \end{figure}
 %
-\subsection{Product Functions}
-
 \subsection{Assumption and Dependencies}
 \label{sec:assumption_and_dependencies}
-The product WOMS specified in this document, with all of its requirements, is dependent on the ACME's current systems functionality. If, for example, there is no system like NIS where network equipment data is stored, WOMS will not be able to fulfill certain requirements - they depend of the functionality of a system like NIS. The same applies for other systems. 
+The product WOMS specified in this document, with all of its requirements, is dependent on the ACME's current systems functionality. If, for example, there is no system like NIS where network equipment data is stored, WOMS will not be able to fulfill certain requirements - they depend on the functionality of a system like NIS. The same applies for other systems. 
 
 To manage meeting GOAL-4, this procurement project is dependent on future project which we assume will be executed. The WOMS product itself will not be the reason this goal will be fulfilled. However, procuring and installing this WOMS will set preconditions for this change to take place.
 
 \subsection{Design and Implementation Constraints}
-\label{sec:desing_and_implementation_constraints}
-In the table \ref{table:design_and_implementation_constraints}, design and implementation constraints affecting the implementation of WOMS are presented, extracted from \emph{ACME Power Company - Appendix A} \cite{A}.
+\label{sec:design_and_implementation_constraints}
+In the table \ref{table:design_and_implementation_constraints}, design and implementation constraints affecting the implementation of WOMS are presented, extracted from \emph{ACME Power Company - Appendix A} \cite{A}. The ID uniquely identifies the design and implementation constraint in the format DIC-\{number\}, where DIC stands for Design and Implementation Constraint.
 \begin{center}
 	\begin{longtable}{|l|p{5cm}|p{5cm}|}
 		\caption{Design and implementation constraints}
@@ -181,12 +179,12 @@ In the table \ref{table:design_and_implementation_constraints}, design and imple
 		\hline
 		\endlastfoot
 		\hline
-		2.6.1 & Apply open standards whenever possible & Concerns all ACME's system architecture \\
+		DIC-1 & Apply open standards whenever possible & Concerns all ACME's system architecture \\
 		\hline
-		2.6.2 & Data flow from ACME computers to and from other networks shall pass through ACME's network boundary firewall proxy &
+		DIC-2 & Data flow from ACME computers to and from other networks shall pass through ACME's network boundary firewall proxy &
 		See section \ref{sec:external_interface_requirements} for more information \\
 		\hline
-		2.6.3 & No modifications shall be done on the ERP system & WOMS must adapt to the ERP system \\ 
+		DIC-3 & No modifications shall be done on the ERP system & WOMS must adapt to the ERP system \\ 
 		\hline
 	\end{longtable}
 \end{center}
