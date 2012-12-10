@@ -6,11 +6,11 @@ The project in hand will be a WOMS, Work Order Management System.  The purpose o
 
 The above mentioned functionality concerns the pre- and the main phase of maintenance work (create, dispatch, and execute WOs). The scope of WOMS is also extended to the aftermath and post-phase of maintenance work, for example follow-up work and analysis. The WOMS gather information such as time and material consumed on WOs, information which is the output from FTs. It will also interact with the finance function of ACME, to automatically enter cost reports and other expenditures. 
 
-Let us shift the focus to another division of ACME; as mentioned in section \ref{sec:introduction}, the customer care function is one major cost - fortunately WOMS offers improved utilities to CC. The system will act as real-time status provider over maintenance/repair/construction work, in other words: providing always up-to-date outage information. 
+Let us shift focus to another division of ACME; as mentioned in section \ref{sec:introduction}, the customer care function is one major cost - fortunately WOMS offers improved utilities to CC. The system will act as real-time status provider over maintenance/repair/construction work, in other words: providing always up-to-date outage information. 
 
 \subsection{Product Stakeholders and Users}
 \label{sec:produt_stakeholders_and_users}
-The product stakeholders have been identified and categorized in a Stakeholder Categorization, see appendix \ref{appendix_b_stakeholder_categorization} to view the model. Furthermore, an Actor Table describing the users, their roles and responsibilities in the system context, can be found in table \ref{table:actor_table}. As one can see, the table shows the different roles direct users (internal and external stakeholders) enact when interacting with the system, and also what actor roles current systems will have.
+The product stakeholders have been identified and categorized in a Stakeholder Categorization, see appendix \ref{appendix_a_stakeholder_categorization} to view the model. Furthermore, an Actor Table describing the users, their roles and responsibilities in the system context, can be found in table \ref{table:actor_table}. As one can see, the table shows the different roles direct users (internal and external stakeholders) enact when interacting with the system, and also what actor roles current systems will have.
 \begin{center}
 	\begin{longtable}{|l|p{7cm}|p{3cm}|}
 		\caption{Actor table}
@@ -52,7 +52,7 @@ The product stakeholders have been identified and categorized in a Stakeholder C
 
 \subsection{Product Environment}
 \label{sec:product_environment}
-This section with subsection 2.3.1-2.3.6 describes all the business processes and model them (modeled as \emph{Process Maps} according to White \cite{bpmn}) to illustrate how they are connected to the WOMS specified in this project. In addition, a \emph{Context Diagram} is presented in appendix \ref{appendix_a_context_diagram}, to illustrate the environment with WOMS together with direct users and other systems. 
+This section with subsection 2.3.1-2.3.6 describes all the business processes and model them (modeled as \emph{Process Maps} according to White \cite{bpmn}) to illustrate how they are connected to the WOMS specified in this project. In addition, a \emph{Context Diagram} is presented in appendix \ref{appendix_b_context_diagram}, to illustrate the environment with WOMS together with direct users and other systems. The sources to the information presented in this section are orginiating from \emph{ACME Power Company - Appendix A} \cite{A}, \emph{Work Order Management Systems Basics - Appendix B} \cite{B}, and an interview with the manager of M/E (held 2012-11-30).
 \subsubsection{Planning Maintenance Work}
 \label{sec:bp1}
 The maintenance work is a large cost driver for ACME, as stated in section \ref{sec:introduction}, and to be able to fulfill the goal GOAL-1 - maintenance work is one process that needs to be improved and increased in efficiency. The \textbf{Planning Maintenance Work} process seeks to satisfy these needs. 
@@ -89,7 +89,7 @@ The WOMS is the system where WOs are created and stored. The system will also he
 \label{sec:bp3}
 The \textbf{Dispatching maintenance/repair work to technicians} is triggered when there is a created and approved work order, a result from the business process \ref{sec:bp1}. Dispatch work orders in a efficient way will contribute to GOALS-1 and GOALS-2, a reason to this is (for example): when a system or equipment is down (broken), the cost is not only the repair cost itself but also the longer an object is out, the higher the costs will be.
 
-This process begins with - a work order operator (may be M/E or MO) has work orders to dispatch. Information such as the work order's priority, the skills and material needed helps the operator in the process of assigning the work order to a FT. Profiles of field technicians is also available including information such as their geographic position and their competence. Before a work order may be dispatched, the operator sends a request to FT who subsequently responds with accept or deny. If it was accepted, a work order has been dispatched and this business process ends. The whole process is modeled in \fref{fig:dispatch}.
+This process begins with a work order operator (may be M/E or MO) has work orders to dispatch. Information such as the work order's priority, the skills and material needed helps the operator in the process of assigning the work order to a FT. Profiles of field technicians is also available including information such as their geographic position and their competence. Before a work order may be dispatched, the operator sends a request to FT who subsequently responds with accept or deny. If it was accepted, a work order has been dispatched and this business process ends. The whole process is modeled in \fref{fig:dispatch}.
 
 WOMS is the underlying system, which enables this process to be executed as recently described. Work order operators works directly with WOMS, viewing WO's and FT's profiles and using the system to interact with FT's. WOMS support the FT's activities as it feeds them with request and work orders, and also receives their responds to dispatched WO-requests.
 \begin{figure}[H]
