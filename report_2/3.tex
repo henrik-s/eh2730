@@ -41,7 +41,7 @@ FR-PMW-4 &A M/E user shall be able to see a WO's total execution time.  & & Must
 \hline
 FR-PMW-5 &A M/E user shall be able to see which spare parts were used to complete a WO. & & Must & \\
 \hline
-FR-PMW-6 & & & & \\
+FR-PMW-6 &A M/E user shall be able to view what sub-contractor executed a WO. & & Should & \\
 \hline
 FR-PMW-7 & & & & \\
 \hline
@@ -86,27 +86,29 @@ In this section all the functional requirements connected to the business proces
 
 \hline
 
-FR-CWO-1 &A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & Must & \\
+FR-CWO-1 & A user shall be able to create a new  WO.& A user is either a MO, M/E or CC. & Must & \\
 \hline
-FR-CWO-2 &A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& Must & 3.2.1\\
+FR-CWO-2 & A user shall be able to prioritize a WO. & A user is either a MO, M/E or CC.& Must & 3.2.1\\
 \hline
-FR-CWO-3 &A user shall be able to edit a WO.  & A user is either a MO, M/E or CC user & Must & 3.2.1 \\
+FR-CWO-3 & A user shall be able to edit a WO.  & A user is either a MO, M/E or CC user & Must & 3.2.1 \\
 \hline
-FR-CWO-4 &The WOMS shall be able gather system equipment manuals from the NIS. & & Must & \\
+FR-CWO-4 & A user shall be able to remove a WO. & A user is either a MO, M/E or CC user & Must & 3.2.1 \\
 \hline
-FR-CWO-5 &The WOMS shall be able to link system equipment manuals to WOs. & & Must & 3.2.3 \\
+FR-CWO-5 & The WOMS shall be able gather system equipment manuals from the NIS. & & Must & \\
 \hline
-FR-CWO-6 &The WOMS shall be able to order a new service in the ERP system. & & Must & \\
+FR-CWO-6 & The WOMS shall be able to link system equipment manuals to WOs. & & Must & 3.2.3 \\
 \hline
-FR-CWO-7 &The WOMS shall be able to parse a service order response from the ERP system. &XXXXXXXXX & Must & \\
+FR-CWO-7 & The WOMS shall be able to order a new service in the ERP system. & & Must & \\
 \hline
-FR-CWO-8 &The WOMS shall be able to set a WO as either accepted or denied. & & Must & \\
+FR-CWO-8 & The WOMS shall be able to read a service order response from the ERP system. & & Must & \\
 \hline
-FR-CWO-9 &A user shall be able to set a WO as either accepted or denied. &A user is either a MO, M/E or CC user & Must & \\
+FR-CWO-9 & The WOMS shall be able to set a WO as either accepted or denied. & & Must & \\
 \hline
-FR-CWO-10& & & & \\
+FR-CWO-10& A user shall be able to set a WO as either accepted or denied. &A user is either a MO, M/E or CC user & Must & \\
 \hline
 FR-CWO-11& & & & \\
+\hline
+FR-CWO-12& & & & \\
 \end{longtable}
 \end{center}
 
@@ -216,7 +218,12 @@ FR-COM-8 & The WOMS shall be able to store a cost report connected to a WO. &A c
 \hline
 FR-COM-9 & The WOMS shall be able to enter a cost report into the ERP. &A cost report contains: Material costs and time costs. & Must & ERI-HI-1 \\ 
 \hline
-
+FR-COM-10& & & & \\
+\hline
+FR-COM-11& & & & \\
+\hline
+FR-COM-12& & & & \\
+\hline
 \end{longtable}
 \end{center}
 
@@ -248,13 +255,25 @@ In this section all the functional requirements connected to the business proces
 \hline
 \endlastfoot
 
-FR-IAO-1 &A user shall be able to view the status of a WO. & & Must & \\ 
+FR-IAO-1 & A user shall be able to view the status of a WO. & A user is either a M/E or MO & Must & \\ 
 \hline
-FR-IAO-2 &A user shall be able to view the estimated time to completion on a WO. & & Must & \\ 
+FR-IAO-2 & A user shall be able to view the estimated time to completion on a WO. &  A user is either a M/E or MO & Must & \\
 \hline
-FR-IAO-3 &The WOMS shall be able to insert outage statuses in the CIS. & & Must & \\ 
+FR-IAO-3 & The WOMS shall be able to insert outage statuses in the CIS. & & Must & \\ 
 \hline
-FR-IAO-4 &The WOMS shall be able to update outage statuses in the CIS. & & Must & \\ 
+FR-IAO-4 & The WOMS shall be able to update outage statuses in the CIS. & & Must & \\ 
+\hline
+FR-IAO-5 & The WOMS shall be able to remove outages statuses in the CIS. & & Must & \\
+\hline 
+FR-IAO-6 & A FT shall be able to insert outage statuses & & & \\
+\hline
+FR-IAO-7 & A FT shall be able to update outage statuses & & & \\
+\hline
+FR-IAO-8 & A FT shall be able to remove outage statuses & & & \\
+\hline
+FR-IAO-9 & & & & \\
+\hline
+FR-IAO-10& & & & \\
 \hline
 
 \end{longtable}
@@ -292,7 +311,7 @@ FR-AC-1 &An ACC user shall be able to view what sub-contractor executed a WO. & 
 \hline
 FR-AC-2 &An ACC user shall be able to view mean execution time for a WO  for each sub-contractor & & Must & \\
 \hline
-FR-AC-3 &An ACC user shall be able to view what sub-contractor  executed a WO. & & Must & \\
+FR-AC-3 &An ACC user shall be able to view what FT executed a WO & & Should & \\
 \hline
 FR-AC-4 &An ACC user shall be able to view a cost report connected to a WO. & & Must & \\
 \hline
